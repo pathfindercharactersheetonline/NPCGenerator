@@ -1,0 +1,19 @@
+{
+	"Characters": [{
+		"Name": "Valeros",
+		"Race": "Human",
+		"Age": 30,
+		"SubmissiveLeader": 4,
+		"Motive": {
+			"Love": 10,
+			"Money": 3,
+			"Ideology": 5,
+			"Survival": 5,
+			"InventionExploration": 3
+		},
+		"Wealth": 3,
+		"Profession": "Singer",
+		"Deity": "None",
+		"Gender": "Male"
+	}]
+}
