@@ -89,8 +89,12 @@
 				"target": ["TargetMain"]
 			}, {
 				"name": "Characters",
-				"pattern": "",
+				"pattern": "Characters",
 				"target": ["Characters"]
+			}, {
+				"name": "Home",
+				"pattern": "",
+				"target": ["Home"]
 			}],
 			"targets": {
 				"TargetMain": {
@@ -104,6 +108,12 @@
 					"transition": "slide",
 					"viewId": "Characters",
 					"viewName": "Characters",
+					"viewLevel": 10
+				},
+				"Home": {
+					"transition": "slide",
+					"viewId": "Home",
+					"viewName": "Home",
 					"viewLevel": 5
 				}
 			}

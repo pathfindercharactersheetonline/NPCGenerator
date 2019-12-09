@@ -1,30 +1,39 @@
 <mvc:View controllerName="NPCGen.NPCGen.controller.Characters" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
 	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
-	<l:BlockLayout background="Dashboard">
-		<l:BlockLayoutRow>
-			<l:BlockLayoutCell width="1">
-				<ScrollContainer>
-					<Table items="{ path: '/Characters', sorter: { path: 'Name' } }">
-						<headerToolbar>
-							<Toolbar>
-								<Title text="Characters"/>
-							</Toolbar>
-						</headerToolbar>
-						<columns>
-							<Column width="10em">
-								<Text text="Name"/>
-							</Column>
-						</columns>
-						<items>
-							<ColumnListItem vAlign="Top">
-								<cells>
-									<Input value="{Name}"/>
-								</cells>
-							</ColumnListItem>
-						</items>
-					</Table>
-				</ScrollContainer>
-			</l:BlockLayoutCell>
-		</l:BlockLayoutRow>
-	</l:BlockLayout>
+	<Page>
+		<l:BlockLayout background="Dashboard">
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell width="1">
+					<ScrollContainer>
+						<Table items="{ path: '/Characters', sorter: { path: 'Name' } }">
+							<headerToolbar>
+								<Toolbar>
+									<Title text="Characters"/>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column width="10em">
+									<Text text="Name"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem vAlign="Top">
+									<cells>
+										<Input value="{Name}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</ScrollContainer>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+		</l:BlockLayout>
+		<footer>
+			<Bar>
+				<contentLeft>
+					<Button icon="sap-icon://nav-back" press="onNavBack"/>
+				</contentLeft>
+			</Bar>
+		</footer>
+	</Page>
 </mvc:View>

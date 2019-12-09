@@ -1,12 +1,9 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
-	"NPCGen/NPCGen/model/formatter"
-], function (Controller, formatter) {
+	"NPCGen/NPCGen/controller/Base.controller"
+], function (Controller) {
 	"use strict";
 
 	return Controller.extend("NPCGen.NPCGen.controller.Characters", {
-
-		formatter: formatter,
 
 		onInit: function () {
 			var oModel = this.getOwnerComponent().getModel("characters");
