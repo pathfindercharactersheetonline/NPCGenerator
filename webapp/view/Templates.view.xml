@@ -1,0 +1,39 @@
+<mvc:View controllerName="NPCGen.NPCGen.controller.Templates" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Page showHeader="false">
+		<l:BlockLayout background="Dashboard">
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell width="1">
+					<ScrollContainer>
+						<Table items="{ path: '/Templates', sorter: { path: 'TemplateName' } }" itemPress=".onNavToItem.call($controller, $event,'Template')">
+							<headerToolbar>
+								<Toolbar>
+									<Title text="Templates for characters"/>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column >
+									<Text text="Name"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem type="Active">
+									<cells>
+										<Text text="{TemplateName}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</ScrollContainer>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+		</l:BlockLayout>
+		<footer>
+			<Bar>
+				<contentLeft>
+					<Button icon="sap-icon://nav-back" press="onNavBack"/>
+				</contentLeft>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

@@ -1,7 +1,8 @@
 <!--https://sapui5.hana.ondemand.com/#/entity/sap.m.GenericTile/sample/sap.m.sample.GenericTileAsLaunchTile-->
 <mvc:View controllerName="NPCGen.NPCGen.controller.Home" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
 	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
-	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Manage Templates" press="press">
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Manage Templates" 
+	press=".onNavTo.call($controller, $event,'Templates')">
 		<TileContent>
 			<ImageContent src="sap-icon://switch-classes"/>
 		</TileContent>

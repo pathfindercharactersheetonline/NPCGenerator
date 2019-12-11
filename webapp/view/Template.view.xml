@@ -1,0 +1,53 @@
+<mvc:View controllerName="NPCGen.NPCGen.controller.Template" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Page showHeader="false">
+		<l:BlockLayout background="Dashboard">
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell width="1">
+					<ScrollContainer>
+						<Input value="{TemplateName}"/>
+						<Table items="{ path: 'FemaleName'}" growing="true">
+							<headerToolbar>
+								<Toolbar>
+									<Title text="Female Names"/>
+									<Button icon="sap-icon://add"
+										press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/FemaleName', '/NameProbability')"/>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column >
+									<Text text="Name"/>
+								</Column>
+								<Column >
+									<Text text="Probabilty"/>
+								</Column>
+								<Column/>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Input value="{Name}"/>
+									</cells>
+									<cells>
+										<Input value="{Probability}"/>
+									</cells>
+									<cells>
+										<Button icon="sap-icon://delete"
+											press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/FemaleName')"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</ScrollContainer>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+		</l:BlockLayout>
+		<footer>
+			<Bar>
+				<contentLeft>
+					<Button icon="sap-icon://nav-back" press="onNavBack"/>
+				</contentLeft>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

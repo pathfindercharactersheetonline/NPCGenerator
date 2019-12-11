@@ -4,11 +4,5 @@ sap.ui.define([
 ], function (Controller, MessageToast) {
 	"use strict";
 
-	return Controller.extend("NPCGen.NPCGen.controller.Home", {
-
-		press: function (oEvent) {
-			MessageToast.show("Tile is pressed.");
-		}
-
-	});
+	return Controller.extend("NPCGen.NPCGen.controller.Home", {});
 });

@@ -21,6 +21,14 @@ sap.ui.define([
 			}
 		},
 
+		onNavToItem: function (oEvent, sTarget) {
+			var oItemPath = oEvent.getParameter("listItem").getBindingContext().getPath();
+			var oId = oItemPath.slice(oItemPath.lastIndexOf("/") + "/".length, oItemPath.length);
+			UIComponent.getRouterFor(this).navTo(sTarget, {
+				Id: oId
+			});
+		},
+
 		onNavBack: function () {
 			var oHistory = History.getInstance();
 			var sPreviousHash = oHistory.getPreviousHash();
@@ -31,6 +39,26 @@ sap.ui.define([
 				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 				oRouter.navTo("Home", true);
 			}
+		},
+
+		onNew: function (oEvent, oMassivePath, oTemplateName) {
+			var oPath = oMassivePath;
+			var oMassive = this.getView().getModel().getProperty(oPath);
+			var oNewLine = JSON.parse(JSON.stringify(this.getOwnerComponent().getModel("template").getProperty(oTemplateName)));
+			oMassive.push(oNewLine);
+			this.getView().getModel().refresh();
+		},
+
+		onDelete: function (oEvent, oMassivePath) { //!TODO допилить возможность выбрать множество имен и все грохнуть
+			if (!oEvent.getSource().getParent().getBindingContextPath)
+				var oSourcePath = oEvent.getSource().getParent().getBindingContext().getPath();
+			else
+				oSourcePath = oEvent.getSource().getParent().getBindingContextPath();
+			var oSourceArray = oSourcePath.split("/");
+			var oDeleteIndex = oSourceArray[oSourceArray.length - 1];
+			var oModidiers = this.getView().getModel().getProperty(oMassivePath);
+			oModidiers.splice(oDeleteIndex, 1);
+			this.getView().getModel().refresh();
 		}
 
 	});

@@ -65,7 +65,11 @@
 			},
 			"templates": {
 				"type": "sap.ui.model.json.JSONModel",
-				"uri": "model/Catalog.json"
+				"uri": "model/Templates.json"
+			},
+			"template": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/Template.json"
 			}
 		},
 		"resources": {
@@ -92,6 +96,16 @@
 				"pattern": "Characters",
 				"target": ["Characters"]
 			}, {
+				"name": "Templates",
+				"pattern": "Templates",
+				"target": ["Templates"]
+			}, {
+				"name": "Template",
+				"pattern": "Templates/Template/{Id}",
+				"target": [
+					"Template"
+				]
+			}, {
 				"name": "Home",
 				"pattern": "",
 				"target": ["Home"]
@@ -109,6 +123,18 @@
 					"viewId": "Characters",
 					"viewName": "Characters",
 					"viewLevel": 10
+				},
+				"Templates": {
+					"transition": "slide",
+					"viewId": "Templates",
+					"viewName": "Templates",
+					"viewLevel": 10
+				},
+				"Template": {
+					"transition": "slide",
+					"viewId": "Template",
+					"viewName": "Template",
+					"viewLevel": 15
 				},
 				"Home": {
 					"transition": "slide",
