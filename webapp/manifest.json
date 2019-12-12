@@ -96,6 +96,10 @@
 				"pattern": "Characters",
 				"target": ["Characters"]
 			}, {
+				"name": "Character",
+				"pattern": "Characters/Charecter/{Id}",
+				"target": ["Character"]
+			}, {
 				"name": "Templates",
 				"pattern": "Templates",
 				"target": ["Templates"]
@@ -123,6 +127,12 @@
 					"viewId": "Characters",
 					"viewName": "Characters",
 					"viewLevel": 10
+				},
+				"Character": {
+					"transition": "slide",
+					"viewId": "Character",
+					"viewName": "Character",
+					"viewLevel": 15
 				},
 				"Templates": {
 					"transition": "slide",

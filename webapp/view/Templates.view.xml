@@ -9,17 +9,24 @@
 							<headerToolbar>
 								<Toolbar>
 									<Title text="Templates for characters"/>
+									<Button icon="sap-icon://add" press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath(), '/Template')"/>
+									<Button icon="sap-icon://delete" text="Delete all"
+										press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath())"/>
 								</Toolbar>
 							</headerToolbar>
 							<columns>
 								<Column >
 									<Text text="Name"/>
 								</Column>
+								<Column/>
 							</columns>
 							<items>
 								<ColumnListItem type="Active">
 									<cells>
-										<Text text="{TemplateName}"/>
+										<Input value="{TemplateName}"/>
+									</cells>
+									<cells>
+										<Button icon="sap-icon://delete" press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath())"/>
 									</cells>
 								</ColumnListItem>
 							</items>

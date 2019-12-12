@@ -8,6 +8,9 @@ sap.ui.define([
 		onInit: function () {
 			var oModel = this.getOwnerComponent().getModel("characters");
 			this.getView().setModel(oModel);
+			this.getView().bindElement({
+				path: "/Characters"
+			});
 		},
 
 		onGenerateCharacter: function (oEvent) {

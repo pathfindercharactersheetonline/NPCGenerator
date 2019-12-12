@@ -8,6 +8,9 @@ sap.ui.define([
 		onInit: function () {
 			var oModel = this.getOwnerComponent().getModel("templates");
 			this.getView().setModel(oModel);
+			this.getView().bindElement({
+				path: "/Templates"
+			});
 		}
 	});
 });

@@ -49,7 +49,13 @@ sap.ui.define([
 			this.getView().getModel().refresh();
 		},
 
-		onDelete: function (oEvent, oMassivePath) { //!TODO допилить возможность выбрать множество имен и все грохнуть
+		onDeleteAll: function (oEvent, oMassivePath) {
+			var oMassive = this.getView().getModel().getProperty(oMassivePath);
+			oMassive.splice(0, oMassive.length);
+			this.getView().getModel().refresh();
+		},
+
+		onDelete: function (oEvent, oMassivePath) {
 			if (!oEvent.getSource().getParent().getBindingContextPath)
 				var oSourcePath = oEvent.getSource().getParent().getBindingContext().getPath();
 			else

@@ -1,0 +1,61 @@
+<mvc:View controllerName="NPCGen.NPCGen.controller.Character" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Page>
+		<f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12"
+			adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="2" columnsM="2"
+			singleContainerFullSize="false">
+			<f:content>
+				<core:Title text="{Name}"/>
+				<Label text="Name"/>
+				<Input value="{Name}"/>
+				<Label text="Race"/>
+				<Input value="{Race}"/>
+				<Label text="Age"/>
+				<Input value="{path:'Age', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<Label text="Leadership"/>
+				<Input value="{path:'SubmissiveLeader', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<core:Title text="Motive"/>
+				<Label text="Love"/>
+				<Input value="{path:'Motive/Love', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<Label text="Money"/>
+				<Input value="{path:'Motive/Money', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<Label text="Ideology"/>
+				<Input value="{path:'Motive/Ideology', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<Label text="Survival"/>
+				<Input value="{path:'Motive/Survival', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<Label text="InventionExploration"/>
+				<Input value="{path:'Motive/InventionExploration', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<core:Title text="Other"/>
+				<Label text="Wealth"/>
+				<Input value="{path:'Wealth', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<Label text="Profession"/>
+				<Input value="{Profession}"/>
+				<Label text="Deity"/>
+				<Input value="{Deity}"/>
+				<Label text="Gender"/>
+				<Input value="{Gender}"/>
+				<!--"Race": "Human",
+				"Age": 30,
+				"SubmissiveLeader": 4,
+				"Motive": {
+					"Love": 10,
+					"Money": 3,
+					"Ideology": 5,
+					"Survival": 5,
+					"InventionExploration": 3
+				},
+				"Wealth": 3,
+				"Profession": "Singer",
+				"Deity": "None",
+				"Gender": "Male"-->
+			</f:content>
+		</f:SimpleForm>
+		<footer>
+			<Bar>
+				<contentLeft>
+					<Button icon="sap-icon://nav-back" press="onNavBack"/>
+				</contentLeft>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

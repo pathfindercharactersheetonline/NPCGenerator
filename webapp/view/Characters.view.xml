@@ -5,21 +5,28 @@
 			<l:BlockLayoutRow>
 				<l:BlockLayoutCell width="1">
 					<ScrollContainer>
-						<Table items="{ path: '/Characters', sorter: { path: 'Name' } }">
+						<Table items="{ path: '/Characters', sorter: { path: 'Name' } }" itemPress=".onNavToItem.call($controller, $event,'Character')">
 							<headerToolbar>
 								<Toolbar>
 									<Title text="Characters"/>
+									<Button icon="sap-icon://add" press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath(), '/Character')"/>
+									<Button icon="sap-icon://delete" text="Delete all"
+										press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath())"/>
 								</Toolbar>
 							</headerToolbar>
 							<columns>
-								<Column width="10em">
+								<Column>
 									<Text text="Name"/>
 								</Column>
+								<Column/>
 							</columns>
 							<items>
-								<ColumnListItem vAlign="Top">
+								<ColumnListItem type="Active">
 									<cells>
-										<Input value="{Name}"/>
+										<Text text="{Name}"/>
+									</cells>
+									<cells>
+										<Button icon="sap-icon://delete" press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath())"/>
 									</cells>
 								</ColumnListItem>
 							</items>

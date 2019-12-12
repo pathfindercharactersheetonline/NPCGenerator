@@ -7,5 +7,1457 @@
 		"Name": "",
 		"Description": "",
 		"Probability": "1"
+	},
+	"Template": {
+		"TemplateName": "",
+		"FemaleName": [{
+			"Name": "Аделаида",
+			"Probability": "1"
+		}, {
+			"Name": "Адриана",
+			"Probability": "1"
+		}, {
+			"Name": "Айтана",
+			"Probability": "1"
+		}, {
+			"Name": "Айнхоа",
+			"Probability": "1"
+		}, {
+			"Name": "Альба",
+			"Probability": "1"
+		}, {
+			"Name": "Алехандра",
+			"Probability": "1"
+		}, {
+			"Name": "Сандра",
+			"Probability": "1"
+		}, {
+			"Name": "Алекса",
+			"Probability": "1"
+		}, {
+			"Name": "Алисия",
+			"Probability": "1"
+		}, {
+			"Name": "Амалия",
+			"Probability": "1"
+		}, {
+			"Name": "Мильи",
+			"Probability": "1"
+		}, {
+			"Name": "Лиа",
+			"Probability": "1"
+		}, {
+			"Name": "Амалия",
+			"Probability": "1"
+		}, {
+			"Name": "Аманда",
+			"Probability": "1"
+		}, {
+			"Name": "Ана",
+			"Probability": "1"
+		}, {
+			"Name": "Анита",
+			"Probability": "1"
+		}, {
+			"Name": "Андреа",
+			"Probability": "1"
+		}, {
+			"Name": "Анхель",
+			"Probability": "1"
+		}, {
+			"Name": "Ангел",
+			"Probability": "1"
+		}, {
+			"Name": "Анхела",
+			"Probability": "1"
+		}, {
+			"Name": "Анжела",
+			"Probability": "1"
+		}, {
+			"Name": "Антония",
+			"Probability": "1"
+		}, {
+			"Name": "Аврора",
+			"Probability": "1"
+		}, {
+			"Name": "Варвара",
+			"Probability": "1"
+		}, {
+			"Name": "Белинда",
+			"Probability": "1"
+		}, {
+			"Name": "Камила",
+			"Probability": "1"
+		}, {
+			"Name": "Кандела",
+			"Probability": "1"
+		}, {
+			"Name": "Карла",
+			"Probability": "1"
+		}, {
+			"Name": "Карлота",
+			"Probability": "1"
+		}, {
+			"Name": "Кармен",
+			"Probability": "1"
+		}, {
+			"Name": "Каролина",
+			"Probability": "1"
+		}, {
+			"Name": "Каталина",
+			"Probability": "1"
+		}, {
+			"Name": "Сесилия",
+			"Probability": "1"
+		}, {
+			"Name": "Селия",
+			"Probability": "1"
+		}, {
+			"Name": "Чипа",
+			"Probability": "1"
+		}, {
+			"Name": "Клара",
+			"Probability": "1"
+		}, {
+			"Name": "Клаудиа",
+			"Probability": "1"
+		}, {
+			"Name": "Кристина",
+			"Probability": "1"
+		}, {
+			"Name": "Даниэла",
+			"Probability": "1"
+		}, {
+			"Name": "Диана",
+			"Probability": "1"
+		}, {
+			"Name": "Долорес",
+			"Probability": "1"
+		}, {
+			"Name": "Элена",
+			"Probability": "1"
+		}, {
+			"Name": "Елизавета",
+			"Probability": "1"
+		}, {
+			"Name": "Эльвира",
+			"Probability": "1"
+		}, {
+			"Name": "Эмилия",
+			"Probability": "1"
+		}, {
+			"Name": "Эсперанса",
+			"Probability": "1"
+		}, {
+			"Name": "Эстефания",
+			"Probability": "1"
+		}, {
+			"Name": "Эстела",
+			"Probability": "1"
+		}, {
+			"Name": "Евгения",
+			"Probability": "1"
+		}, {
+			"Name": "Ева",
+			"Probability": "1"
+		}, {
+			"Name": "Глория",
+			"Probability": "1"
+		}, {
+			"Name": "Елена",
+			"Probability": "1"
+		}, {
+			"Name": "Ирина",
+			"Probability": "1"
+		}, {
+			"Name": "Инес",
+			"Probability": "1"
+		}, {
+			"Name": "Инесса",
+			"Probability": "1"
+		}, {
+			"Name": "Агнес",
+			"Probability": "1"
+		}, {
+			"Name": "Ирен",
+			"Probability": "1"
+		}, {
+			"Name": "Ирис",
+			"Probability": "1"
+		}, {
+			"Name": "Исабель",
+			"Probability": "1"
+		}, {
+			"Name": "Елизавета",
+			"Probability": "1"
+		}, {
+			"Name": "Исра",
+			"Probability": "1"
+		}, {
+			"Name": "Жасмин",
+			"Probability": "1"
+		}, {
+			"Name": "Химена",
+			"Probability": "1"
+		}, {
+			"Name": "Юлия",
+			"Probability": "1"
+		}, {
+			"Name": "Хосефа",
+			"Probability": "1"
+		}, {
+			"Name": "Лайа",
+			"Probability": "1"
+		}, {
+			"Name": "Лаура",
+			"Probability": "1"
+		}, {
+			"Name": "Летисия",
+			"Probability": "1"
+		}, {
+			"Name": "Линда",
+			"Probability": "1"
+		}, {
+			"Name": "Лола",
+			"Probability": "1"
+		}, {
+			"Name": "Люция",
+			"Probability": "1"
+		}, {
+			"Name": "Магдалена",
+			"Probability": "1"
+		}, {
+			"Name": "Маргарита",
+			"Probability": "1"
+		}, {
+			"Name": "Мария",
+			"Probability": "1"
+		}, {
+			"Name": "Мариана",
+			"Probability": "1"
+		}, {
+			"Name": "Марина",
+			"Probability": "1"
+		}, {
+			"Name": "Марисоль",
+			"Probability": "1"
+		}, {
+			"Name": "Марта",
+			"Probability": "1"
+		}, {
+			"Name": "Мартина",
+			"Probability": "1"
+		}, {
+			"Name": "Матильда",
+			"Probability": "1"
+		}, {
+			"Name": "Мерседес",
+			"Probability": "1"
+		}, {
+			"Name": "Моника",
+			"Probability": "1"
+		}, {
+			"Name": "Hаталия",
+			"Probability": "1"
+		}, {
+			"Name": "Нереа",
+			"Probability": "1"
+		}, {
+			"Name": "Ноа",
+			"Probability": "1"
+		}, {
+			"Name": "Оливия",
+			"Probability": "1"
+		}, {
+			"Name": "Палома",
+			"Probability": "1"
+		}, {
+			"Name": "Патрисия",
+			"Probability": "1"
+		}, {
+			"Name": "Паула",
+			"Probability": "1"
+		}, {
+			"Name": "Пенелопа",
+			"Probability": "1"
+		}, {
+			"Name": "Пилар",
+			"Probability": "1"
+		}, {
+			"Name": "Присцилла",
+			"Probability": "1"
+		}, {
+			"Name": "Рафаэла",
+			"Probability": "1"
+		}, {
+			"Name": "Ракель",
+			"Probability": "1"
+		}, {
+			"Name": "Роза",
+			"Probability": "1"
+		}, {
+			"Name": "Розалия",
+			"Probability": "1"
+		}, {
+			"Name": "Сара",
+			"Probability": "1"
+		}, {
+			"Name": "Сильвия",
+			"Probability": "1"
+		}, {
+			"Name": "София",
+			"Probability": "1"
+		}, {
+			"Name": "Соледад",
+			"Probability": "1"
+		}, {
+			"Name": "Сусана",
+			"Probability": "1"
+		}, {
+			"Name": "Тереза",
+			"Probability": "1"
+		}, {
+			"Name": "Урсула",
+			"Probability": "1"
+		}, {
+			"Name": "Валентина",
+			"Probability": "1"
+		}, {
+			"Name": "Валерия",
+			"Probability": "1"
+		}, {
+			"Name": "Вероника",
+			"Probability": "1"
+		}, {
+			"Name": "Виктория",
+			"Probability": "1"
+		}, {
+			"Name": "Виолета",
+			"Probability": "1"
+		}, {
+			"Name": "Вирджиния",
+			"Probability": "1"
+		}, {
+			"Name": "Ямиле",
+			"Probability": "1"
+		}, {
+			"Name": "Ксимена",
+			"Probability": "1"
+		}],
+		"MaleName": [{
+				"Name": "Агустин",
+				"Probability": "1"
+			}, {
+				"Name": "Алехандро",
+				"Probability": "1"
+			}, {
+				"Name": "Альберто",
+				"Probability": "1"
+			}, {
+				"Name": "Адриан",
+				"Probability": "1"
+			}, {
+				"Name": "Альваро",
+				"Probability": "1"
+			}, {
+				"Name": "Амадор",
+				"Probability": "1"
+			}, {
+				"Name": "Амистад",
+				"Probability": "1"
+			}, {
+				"Name": "Андрес",
+				"Probability": "1"
+			}, {
+				"Name": "Анхель",
+				"Probability": "1"
+			}, {
+				"Name": "Антонио",
+				"Probability": "1"
+			}, {
+				"Name": "Арнау",
+				"Probability": "1"
+			}, {
+				"Name": "Бенхамин",
+				"Probability": "1"
+			}, {
+				"Name": "Бьенвенидо",
+				"Probability": "1"
+			}, {
+				"Name": "Карлос",
+				"Probability": "1"
+			}, {
+				"Name": "Сезар",
+				"Probability": "1"
+			}, {
+				"Name": "Кристофер",
+				"Probability": "1"
+			}, {
+				"Name": "Корнелио",
+				"Probability": "1"
+			}, {
+				"Name": "Кристиан",
+				"Probability": "1"
+			}, {
+				"Name": "Крастабаль",
+				"Probability": "1"
+			}, {
+				"Name": "Крус",
+				"Probability": "1"
+			}, {
+				"Name": "Даниель",
+				"Probability": "1"
+			}, {
+				"Name": "Дарио",
+				"Probability": "1"
+			}, {
+				"Name": "Давид",
+				"Probability": "1"
+			}, {
+				"Name": "Диего",
+				"Probability": "1"
+			}, {
+				"Name": "Дезидерио",
+				"Probability": "1"
+			}, {
+				"Name": "Эдмундо",
+				"Probability": "1"
+			}, {
+				"Name": "Эдуардо",
+				"Probability": "1"
+			}, {
+				"Name": "Эмилио",
+				"Probability": "1"
+			}, {
+				"Name": "Элизео",
+				"Probability": "1"
+			}, {
+				"Name": "Эммануель",
+				"Probability": "1"
+			}, {
+				"Name": "Эстебан",
+				"Probability": "1"
+			}, {
+				"Name": "Энрике",
+				"Probability": "1"
+			}, {
+				"Name": "Эухенио",
+				"Probability": "1"
+			}, {
+				"Name": "Факундо",
+				"Probability": "1"
+			}, {
+				"Name": "Фелипе",
+				"Probability": "1"
+			}, {
+				"Name": "Федерико",
+				"Probability": "1"
+			}, {
+				"Name": "Фернандо",
+				"Probability": "1"
+			}, {
+				"Name": "Франсиско",
+				"Probability": "1"
+			}, {
+				"Name": "Габриель",
+				"Probability": "1"
+			}, {
+				"Name": "Гомес",
+				"Probability": "1"
+			}, {
+				"Name": "Гонсало",
+				"Probability": "1"
+			}, {
+				"Name": "Гильермо",
+				"Probability": "1"
+			}, {
+				"Name": "Хуго",
+				"Probability": "1"
+			}, {
+				"Name": "Игнасио",
+				"Probability": "1"
+			}, {
+				"Name": "Исидро",
+				"Probability": "1"
+			}, {
+				"Name": "Иван",
+				"Probability": "1"
+			}, {
+				"Name": "Хайме",
+				"Probability": "1"
+			}, {
+				"Name": "Хавьер",
+				"Probability": "1"
+			}, {
+				"Name": "Хесус",
+				"Probability": "1"
+			}, {
+				"Name": "Джоель",
+				"Probability": "1"
+			}, {
+				"Name": "Хоакин",
+				"Probability": "1"
+			}, {
+				"Name": "Джорди",
+				"Probability": "1"
+			}, {
+				"Name": "Хосе",
+				"Probability": "1"
+			}, {
+				"Name": "Хорхе",
+				"Probability": "1"
+			}, {
+				"Name": "Хуан",
+				"Probability": "1"
+			}, {
+				"Name": "Хулиан",
+				"Probability": "1"
+			}, {
+				"Name": "Леонардо",
+				"Probability": "1"
+			}, {
+				"Name": "Лоренсо",
+				"Probability": "1"
+			}, {
+				"Name": "Лука",
+				"Probability": "1"
+			}, {
+				"Name": "Лусиано",
+				"Probability": "1"
+			}, {
+				"Name": "Луис",
+				"Probability": "1"
+			}, {
+				"Name": "Мануель",
+				"Probability": "1"
+			}, {
+				"Name": "Маркос",
+				"Probability": "1"
+			}, {
+				"Name": "Марио",
+				"Probability": "1"
+			}, {
+				"Name": "Матео",
+				"Probability": "1"
+			}, {
+				"Name": "Мартин",
+				"Probability": "1"
+			}, {
+				"Name": "Маурисио",
+				"Probability": "1"
+			}, {
+				"Name": "Максимилиано",
+				"Probability": "1"
+			}, {
+				"Name": "Мигель",
+				"Probability": "1"
+			}, {
+				"Name": "Наталь",
+				"Probability": "1"
+			}, {
+				"Name": "Николас",
+				"Probability": "1"
+			}, {
+				"Name": "Невада",
+				"Probability": "1"
+			}, {
+				"Name": "Ное",
+				"Probability": "1"
+			}, {
+				"Name": "Октавио",
+				"Probability": "1"
+			}, {
+				"Name": "Оскар",
+				"Probability": "1"
+			}, {
+				"Name": "Пабло",
+				"Probability": "1"
+			}, {
+				"Name": "Педро",
+				"Probability": "1"
+			}, {
+				"Name": "Патрисио",
+				"Probability": "1"
+			}, {
+				"Name": "Рафаель",
+				"Probability": "1"
+			}, {
+				"Name": "Рамон",
+				"Probability": "1"
+			}, {
+				"Name": "Рауль",
+				"Probability": "1"
+			}, {
+				"Name": "Ренато",
+				"Probability": "1"
+			}, {
+				"Name": "Рикардо",
+				"Probability": "1"
+			}, {
+				"Name": "Родриго",
+				"Probability": "1"
+			}, {
+				"Name": "Роберто",
+				"Probability": "1"
+			}, {
+				"Name": "Росио",
+				"Probability": "1"
+			}, {
+				"Name": "Рубен",
+				"Probability": "1"
+			}, {
+				"Name": "Сальвадор",
+				"Probability": "1"
+			}, {
+				"Name": "Самуель",
+				"Probability": "1"
+			}, {
+				"Name": "Санчо",
+				"Probability": "1"
+			}, {
+				"Name": "Сантиаго",
+				"Probability": "1"
+			}, {
+				"Name": "Сантос",
+				"Probability": "1"
+			}, {
+				"Name": "Сантино",
+				"Probability": "1"
+			}, {
+				"Name": "Себастьян",
+				"Probability": "1"
+			}, {
+				"Name": "Серхио",
+				"Probability": "1"
+			}, {
+				"Name": "Томас",
+				"Probability": "1"
+			}, {
+				"Name": "Умберто",
+				"Probability": "1"
+			}, {
+				"Name": "Валентино",
+				"Probability": "1"
+			}, {
+				"Name": "Винсенте",
+				"Probability": "1"
+			}, {
+				"Name": "Виктор",
+				"Probability": "1"
+			}
+
+		],
+		"Surname": [{
+				"Name": "Алонсо",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Агилар",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Алварес",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Ариас",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Бенитес",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Браво",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Бланко",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Кабальеро",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Калво",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Кабрера",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Кампос",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Кано",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Карраско",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Кармона",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Кастильо",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Кастро",
+				"Probability": "1"
+			},
+
+			{
+				"Name": "Кортес",
+				"Probability": "1"
+			}, {
+				"Name": "Креспо ",
+				"Probability": "1"
+			}, {
+				"Name": "Крус ",
+				"Probability": "1"
+			}, {
+				"Name": "Дельгадо ",
+				"Probability": "1"
+			}, {
+				"Name": "Диес ",
+				"Probability": "1"
+			}, {
+				"Name": "Диас ",
+				"Probability": "1"
+			}, {
+				"Name": "Домингес ",
+				"Probability": "1"
+			}, {
+				"Name": "Дюран ",
+				"Probability": "1"
+			}, {
+				"Name": "Эстебан ",
+				"Probability": "1"
+			}, {
+				"Name": "Фернандес ",
+				"Probability": "1"
+			}, {
+				"Name": "Феррер ",
+				"Probability": "1"
+			}, {
+				"Name": "Фуентес ",
+				"Probability": "1"
+			}, {
+				"Name": "Флорес ",
+				"Probability": "1"
+			}, {
+				"Name": "Гальего ",
+				"Probability": "1"
+			}, {
+				"Name": "Гальярдо ",
+				"Probability": "1"
+			}, {
+				"Name": "Гарсиа ",
+				"Probability": "1"
+			}, {
+				"Name": "Гарридо ",
+				"Probability": "1"
+			}, {
+				"Name": "Жиль ",
+				"Probability": "1"
+			}, {
+				"Name": "Жименес ",
+				"Probability": "1"
+			}, {
+				"Name": "Гомес ",
+				"Probability": "1"
+			}, {
+				"Name": "Гонсалес ",
+				"Probability": "1"
+			}, {
+				"Name": "Герреро ",
+				"Probability": "1"
+			}, {
+				"Name": "Гутиерес ",
+				"Probability": "1"
+			}, {
+				"Name": "Ернандес ",
+				"Probability": "1"
+			}, {
+				"Name": "Еррера ",
+				"Probability": "1"
+			}, {
+				"Name": "Ерреро ",
+				"Probability": "1"
+			}, {
+				"Name": "Идалько ",
+				"Probability": "1"
+			}, {
+				"Name": "Ибанес ",
+				"Probability": "1"
+			}, {
+				"Name": "Иглесиас ",
+				"Probability": "1"
+			}, {
+				"Name": "Хименес ",
+				"Probability": "1"
+			}, {
+				"Name": "Леон ",
+				"Probability": "1"
+			}, {
+				"Name": "Лопес ",
+				"Probability": "1"
+			}, {
+				"Name": "Лоренсо ",
+				"Probability": "1"
+			}, {
+				"Name": "Лосано ",
+				"Probability": "1"
+			}, {
+				"Name": "Марин ",
+				"Probability": "1"
+			}, {
+				"Name": "Маркес ",
+				"Probability": "1"
+			}, {
+				"Name": "Мартин ",
+				"Probability": "1"
+			}, {
+				"Name": "Мартинес ",
+				"Probability": "1"
+			}, {
+				"Name": "Медина ",
+				"Probability": "1"
+			}, {
+				"Name": "Мендес ",
+				"Probability": "1"
+			}, {
+				"Name": "Молина ",
+				"Probability": "1"
+			}, {
+				"Name": "Монтеро ",
+				"Probability": "1"
+			}, {
+				"Name": "Мора ",
+				"Probability": "1"
+			}, {
+				"Name": "Моралес ",
+				"Probability": "1"
+			}, {
+				"Name": "Морено ",
+				"Probability": "1"
+			}, {
+				"Name": "Мойя ",
+				"Probability": "1"
+			}, {
+				"Name": "Муньонс ",
+				"Probability": "1"
+			}, {
+				"Name": "Наварро ",
+				"Probability": "1"
+			}, {
+				"Name": "Ньето ",
+				"Probability": "1"
+			}, {
+				"Name": "Нуньес ",
+				"Probability": "1"
+			}, {
+				"Name": "Ортега ",
+				"Probability": "1"
+			}, {
+				"Name": "Ортис ",
+				"Probability": "1"
+			}, {
+				"Name": "Парра ",
+				"Probability": "1"
+			}, {
+				"Name": "Паскуаль ",
+				"Probability": "1"
+			}, {
+				"Name": "Пастор ",
+				"Probability": "1"
+			}, {
+				"Name": "Перес ",
+				"Probability": "1"
+			}, {
+				"Name": "Пенья ",
+				"Probability": "1"
+			}, {
+				"Name": "Прьето ",
+				"Probability": "1"
+			}, {
+				"Name": "Рамирес ",
+				"Probability": "1"
+			}, {
+				"Name": "Рамос ",
+				"Probability": "1"
+			}, {
+				"Name": "Рей ",
+				"Probability": "1"
+			}, {
+				"Name": "Рейес ",
+				"Probability": "1"
+			}, {
+				"Name": "Родригес ",
+				"Probability": "1"
+			}, {
+				"Name": "Ромеро ",
+				"Probability": "1"
+			}, {
+				"Name": "Роман ",
+				"Probability": "1"
+			}, {
+				"Name": "Рубио ",
+				"Probability": "1"
+			}, {
+				"Name": "Руис ",
+				"Probability": "1"
+			}, {
+				"Name": "Саес ",
+				"Probability": "1"
+			}, {
+				"Name": "Санчес ",
+				"Probability": "1"
+			}, {
+				"Name": "Сантана ",
+				"Probability": "1"
+			}, {
+				"Name": "Сантьяго ",
+				"Probability": "1"
+			}, {
+				"Name": "Санс ",
+				"Probability": "1"
+			}, {
+				"Name": "Сантос ",
+				"Probability": "1"
+			}, {
+				"Name": "Серрано ",
+				"Probability": "1"
+			}, {
+				"Name": "Солер ",
+				"Probability": "1"
+			}, {
+				"Name": "Сото ",
+				"Probability": "1"
+			}, {
+				"Name": "Суарес ",
+				"Probability": "1"
+			}, {
+				"Name": "Торрес ",
+				"Probability": "1"
+			}, {
+				"Name": "Васкес ",
+				"Probability": "1"
+			}, {
+				"Name": "Баргас ",
+				"Probability": "1"
+			}, {
+				"Name": "Вега ",
+				"Probability": "1"
+			}, {
+				"Name": "Веласко ",
+				"Probability": "1"
+			}, {
+				"Name": "Винсенте ",
+				"Probability": "1"
+			}, {
+				"Name": "Видаль ",
+				"Probability": "1"
+			}
+		],
+		"ProfessionType": [{
+			"Name": "Религия",
+			"Probability": "1"
+		}, {
+			"Name": "Власть",
+			"Probability": "1"
+		}, {
+			"Name": "Военные",
+			"Probability": "1"
+		}, {
+			"Name": "Разбойники",
+			"Probability": "1"
+		}, {
+			"Name": "Простолюдины",
+			"Probability": "1"
+		}, {
+			"Name": "Зажиточные",
+			"Probability": "1"
+		}, {
+			"Name": "Люди Искусства",
+			"Probability": "1"
+		}, {
+			"Name": "Ученые",
+			"Probability": "1"
+		}],
+		"Profession": {
+			"Религия": [{
+				"Name": "Монах",
+				"Probability": "1"
+			}, {
+				"Name": "аколит",
+				"Probability": "1"
+			}, {
+				"Name": "чтец",
+				"Probability": "1"
+			}, {
+				"Name": "Субдиакон",
+				"Probability": "1"
+			}, {
+				"Name": "Остиарий",
+				"Probability": "1"
+			}, {
+				"Name": "экзорцист ",
+				"Probability": "1"
+			}, {
+				"Name": "Ординарий",
+				"Probability": "1"
+			}, {
+				"Name": "Ауксилиарий",
+				"Probability": "1"
+			}, {
+				"Name": "Капеллан",
+				"Probability": "1"
+			}, {
+				"Name": "Епископ",
+				"Probability": "1"
+			}, {
+				"Name": "Архиепископ",
+				"Probability": "1"
+			}],
+			"Власть": [{
+				"Name": "Бейлиф (судебный пристав)",
+				"Probability": "1"
+			}, {
+				"Name": "Сборщик податей",
+				"Probability": "1"
+			}, {
+				"Name": "Тюремщик",
+				"Probability": "1"
+			}, {
+				"Name": "Лесничий",
+				"Probability": "1"
+			}, {
+				"Name": "Император",
+				"Probability": "1"
+			}, {
+				"Name": "Судья",
+				"Probability": "1"
+			}, {
+				"Name": "Герцог",
+				"Probability": "1"
+			}, {
+				"Name": "Барон",
+				"Probability": "1"
+			}],
+			"Военные": [{
+				"Name": "Рыцарь",
+				"Probability": "1"
+			}, {
+				"Name": "Оруженосец",
+				"Probability": "1"
+			}, {
+				"Name": "Арбалетчик",
+				"Probability": "1"
+			}, {
+				"Name": "Гражданские сопровождающие",
+				"Probability": "1"
+			}, {
+				"Name": "Барабанщик",
+				"Probability": "1"
+			}, {
+				"Name": "Алебардщик",
+				"Probability": "1"
+			}, {
+				"Name": "Копейщик",
+				"Probability": "1"
+			}, {
+				"Name": "Мечник",
+				"Probability": "1"
+			}, {
+				"Name": "Лучник",
+				"Probability": "1"
+			}, {
+				"Name": "Десятник",
+				"Probability": "1"
+			}, {
+				"Name": "Сотник",
+				"Probability": "1"
+			}, {
+				"Name": "Тысячник",
+				"Probability": "1"
+			}, {
+				"Name": "Генерал",
+				"Probability": "1"
+			}],
+			"Разбойники": [{
+				"Name": "Скупщик краденного",
+				"Probability": "1"
+			}, {
+				"Name": "Грабитель",
+				"Probability": "1"
+			}, {
+				"Name": "Мошенник",
+				"Probability": "1"
+			}, {
+				"Name": "Убийца",
+				"Probability": "1"
+			}, {
+				"Name": "Медвежатник",
+				"Probability": "1"
+			}, {
+				"Name": "Браконьер",
+				"Probability": "1"
+			}, {
+				"Name": "Наперсточник",
+				"Probability": "1"
+			}],
+			"Простолюдины": [{
+				"Name": "Аптекарь",
+				"Probability": "1"
+			}, {
+				"Name": "Коробейник (странствующий торговец)",
+				"Probability": "1"
+			}, {
+				"Name": "Погонщик скота",
+				"Probability": "1"
+			}, {
+				"Name": "Доярка",
+				"Probability": "1"
+			}, {
+				"Name": "Трактирщик",
+				"Probability": "1"
+			}, {
+				"Name": "Пекарь",
+				"Probability": "1"
+			}, {
+				"Name": "Ткач",
+				"Probability": "1"
+			}, {
+				"Name": "хирург",
+				"Probability": "1"
+			}, {
+				"Name": "мясник",
+				"Probability": "1"
+			}, {
+				"Name": "прядильщик",
+				"Probability": "1"
+			}, {
+				"Name": "Сапожник",
+				"Probability": "1"
+			}, {
+				"Name": "Лесоруб",
+				"Probability": "1"
+			}, {
+				"Name": "Мельник",
+				"Probability": "1"
+			}, {
+				"Name": "закройщик",
+				"Probability": "1"
+			}, {
+				"Name": "валяльщик",
+				"Probability": "1"
+			}, {
+				"Name": "кожевенник",
+				"Probability": "1"
+			}, {
+				"Name": "колесный мастер ",
+				"Probability": "1"
+			}, {
+				"Name": "кузнец ",
+				"Probability": "1"
+			}, {
+				"Name": "Плотник",
+				"Probability": "1"
+			}, {
+				"Name": "каменщик",
+				"Probability": "1"
+			}, {
+				"Name": "камнетес",
+				"Probability": "1"
+			}, {
+				"Name": "Свечник",
+				"Probability": "1"
+			}, {
+				"Name": "Портной",
+				"Probability": "1"
+			}, {
+				"Name": "Садовник",
+				"Probability": "1"
+			}, {
+				"Name": "Крестьянин",
+				"Probability": "1"
+			}, {
+				"Name": "Повар",
+				"Probability": "1"
+			}, {
+				"Name": "Красильщик",
+				"Probability": "1"
+			}, {
+				"Name": "Рыбак",
+				"Probability": "1"
+			}, {
+				"Name": "Меховщик",
+				"Probability": "1"
+			}, {
+				"Name": "Стеклодув",
+				"Probability": "1"
+			}, {
+				"Name": "Могильщик",
+				"Probability": "1"
+			}, {
+				"Name": "Матрос",
+				"Probability": "1"
+			}],
+			"Зажиточные": [{
+				"Name": "Купец",
+				"Probability": "1"
+			}, {
+				"Name": "Писец",
+				"Probability": "1"
+			}, {
+				"Name": "Адвокат/юрист",
+				"Probability": "1"
+			}, {
+				"Name": "Дипломат",
+				"Probability": "1"
+			}, {
+				"Name": "Банкир",
+				"Probability": "1"
+			}, {
+				"Name": "Мореплаватель (капитан)",
+				"Probability": "1"
+			}, {
+				"Name": "Оружейник",
+				"Probability": "1"
+			}, {
+				"Name": "Ювелир",
+				"Probability": "1"
+			}],
+			"Люди Искусства": [{
+				"Name": "Художник",
+				"Probability": "1"
+			}, {
+				"Name": "Поэт",
+				"Probability": "1"
+			}, {
+				"Name": "Певец",
+				"Probability": "1"
+			}, {
+				"Name": "Музыкант (инструмент)",
+				"Probability": "1"
+			}, {
+				"Name": "Бард",
+				"Probability": "1"
+			}, {
+				"Name": "Актер",
+				"Probability": "1"
+			}, {
+				"Name": "Портной (модельер)",
+				"Probability": "1"
+			}, {
+				"Name": "Акробат",
+				"Probability": "1"
+			}, {
+				"Name": "Певец",
+				"Probability": "1"
+			}, {
+				"Name": "Драматург",
+				"Probability": "1"
+			}, {
+				"Name": "Шут",
+				"Probability": "1"
+			}, {
+				"Name": "Переплетчик",
+				"Probability": "1"
+			}, {
+				"Name": "Гравер",
+				"Probability": "1"
+			}],
+			"Ученые": [{
+				"Name": "Алхимик",
+				"Probability": "1"
+			}, {
+				"Name": "Заклинатель",
+				"Probability": "1"
+			}, {
+				"Name": "Зачарователь",
+				"Probability": "1"
+			}, {
+				"Name": "Маг",
+				"Probability": "1"
+			}, {
+				"Name": "Инженер",
+				"Probability": "1"
+			}, {
+				"Name": "Ученый",
+				"Probability": "1"
+			}, {
+				"Name": "Философ",
+				"Probability": "1"
+			}, {
+				"Name": "Картограф",
+				"Probability": "1"
+			}, {
+				"Name": "Архитектор",
+				"Probability": "1"
+			}, {
+				"Name": "Врач",
+				"Probability": "1"
+			}, {
+				"Name": "Астролог",
+				"Probability": "1"
+			}, {
+				"Name": "Травник",
+				"Probability": "1"
+			}]
+		},
+		"Race": [{
+			"Name": "Dwarf",
+			"Probability": "1"
+		}, {
+			"Name": "Halfling",
+			"Probability": "1"
+		}, {
+			"Name": "Elf",
+			"Probability": "1"
+		}, {
+			"Name": "Human",
+			"Probability": "1"
+		}, {
+			"Name": "Gnome",
+			"Probability": "1"
+		}, {
+			"Name": "Half-orc",
+			"Probability": "1"
+		}, {
+			"Name": "Half-elf",
+			"Probability": "1"
+		}],
+		"Gender": [{
+			"Name": "Male",
+			"Probability": "1"
+		}, {
+			"Name": "Female",
+			"Probability": "1"
+		}],
+		"Deity": [{
+			"Name": "Erastil",
+			"Description": "God of farming, hunting, trade, family",
+			"Probability": "1"
+		}, {
+			"Name": "Iomedae",
+			"Description": "Goddess of valor, rulership, justice, honor",
+			"Probability": "1"
+		}, {
+			"Name": "Torag",
+			"Description": "God of the forge, protection, strategy",
+			"Probability": "1"
+		}, {
+			"Name": "Sarenrae",
+			"Description": "Goddess of the sun, redemption, honesty, healing",
+			"Probability": "1"
+		}, {
+			"Name": "Shelyn",
+			"Description": "Goddess of beauty, art, love, music",
+			"Probability": "1"
+		}, {
+			"Name": "Desna",
+			"Description": "Goddess of dreams, stars, travelers, luck",
+			"Probability": "1"
+		}, {
+			"Name": "Cayden Cailean",
+			"Description": "God of freedom, ale, wine, bravery",
+			"Probability": "1"
+		}, {
+			"Name": "Abadar",
+			"Description": "God of cities, wealth, merchants, law",
+			"Probability": "1"
+		}, {
+			"Name": "Irori",
+			"Description": "God of history, knowledge, self-perfection",
+			"Probability": "1"
+		}, {
+			"Name": "Gozreh",
+			"Description": "Deity of nature, weather, the sea",
+			"Probability": "1"
+		}, {
+			"Name": "Pharasma",
+			"Description": "Goddess of fate, death, prophecy, birth",
+			"Probability": "1"
+		}, {
+			"Name": "Nethys",
+			"Description": "God of magic",
+			"Probability": "1"
+		}, {
+			"Name": "Gorum",
+			"Description": "God of strength, battle, weapons",
+			"Probability": "1"
+		}, {
+			"Name": "Calistria",
+			"Description": "Goddess of trickery, lust, revenge",
+			"Probability": "1"
+		}, {
+			"Name": "Asmodeus",
+			"Description": "God of tyranny, slavery, pride, contracts",
+			"Probability": "1"
+		}, {
+			"Name": "Zon-Kuthon",
+			"Description": "God of envy, pain, darkness, loss",
+			"Probability": "1"
+		}, {
+			"Name": "Urgathoa",
+			"Description": "Goddess of gluttony, disease, undeath",
+			"Probability": "1"
+		}, {
+			"Name": "Norgorber",
+			"Description": "God of greed, secrets, poison, murder",
+			"Probability": "1"
+		}, {
+			"Name": "Lamashtu",
+			"Description": "Goddess of madness, monsters, nightmares",
+			"Probability": "1"
+		}, {
+			"Name": "Rovagug",
+			"Description": "God of wrath, disaster, destruction",
+			"Probability": "1"
+		}, {
+			"Name": "None",
+			"Description": "",
+			"Probability": "1"
+		}]
+	},
+	"Character": {
+		"Name": "",
+		"Race": "",
+		"Age": 0,
+		"SubmissiveLeader": 0,
+		"Motive": {
+			"Love": 0,
+			"Money": 0,
+			"Ideology": 0,
+			"Survival": 0,
+			"InventionExploration": 0
+		},
+		"Wealth": 0,
+		"Profession": "",
+		"Deity": "",
+		"Gender": ""
 	}
 }
