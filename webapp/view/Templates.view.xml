@@ -19,6 +19,9 @@
 									<Text text="Name"/>
 								</Column>
 								<Column/>
+								<Column >
+									<Text text="Generate Character"/>
+								</Column>
 							</columns>
 							<items>
 								<ColumnListItem type="Active">
@@ -27,6 +30,9 @@
 									</cells>
 									<cells>
 										<Button icon="sap-icon://delete" press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath())"/>
+									</cells>
+									<cells>
+										<Button icon="sap-icon://add-employee" press=".onGenerateCharacter.call($controller,$event)"/>
 									</cells>
 								</ColumnListItem>
 							</items>
