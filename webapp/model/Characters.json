@@ -1,6 +1,7 @@
 {
 	"Characters": [{
 		"Name": "Valeros",
+		"Surname": "",
 		"Race": "Human",
 		"Age": 30,
 		"SubmissiveLeader": 4,

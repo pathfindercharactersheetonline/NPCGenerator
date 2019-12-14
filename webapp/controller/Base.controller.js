@@ -110,6 +110,7 @@ sap.ui.define([
 			default:
 				oNewLine.Name = this.getRandomObject.call(this, oTemplate.MaleName).Name;
 			}
+			oNewLine.Surname = this.getRandomObject.call(this, oTemplate.Surname).Name;
 			oNewLine.Race = this.getRandomObject.call(this, oTemplate.Race).Name;
 			oNewLine.Deity = this.getRandomObject.call(this, oTemplate.Deity).Name;
 			var sProfessionType = this.getRandomObject.call(this, oTemplate.ProfessionType).Name;
@@ -124,7 +125,7 @@ sap.ui.define([
 			oNewLine.Wealth = this.getRandomNumber.call(this, 1, 10);
 
 			oMassive.push(oNewLine);
-			this.getView().getModel().refresh();
+			this.getOwnerComponent().getModel("characters").refresh();
 			MessageToast.show(oNewLine.Name + " created");
 		}
 

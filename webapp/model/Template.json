@@ -1445,6 +1445,7 @@
 	},
 	"Character": {
 		"Name": "",
+		"Surname": "",
 		"Race": "",
 		"Age": 0,
 		"SubmissiveLeader": 0,
