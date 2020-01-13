@@ -1,0 +1,43 @@
+{
+	"Class": [{
+		"Name": "Barbarian",
+		"Description": "",
+		"Probability": "1"
+	}, {
+		"Name": "Bard",
+		"Description": "",
+		"Probability": "1"
+	}, {
+		"Name": "Cleric ",
+		"Description": "",
+		"Probability": "1"
+	}, {
+		"Name": "Druid ",
+		"Description": "",
+		"Probability": "1"
+	}, {
+		"Name": "Fighter ",
+		"Description": "",
+		"Probability": "1"
+	}, {
+		"Name": "Monk ",
+		"Description": "",
+		"Probability": "1"
+	}, {
+		"Name": "Paladin60Ranger",
+		"Description": "",
+		"Probability": "1"
+	}, {
+		"Name": "Rogue ",
+		"Description": "",
+		"Probability": "1"
+	}, {
+		"Name": "Sorcerer ",
+		"Description": "",
+		"Probability": "1"
+	}, {
+		"Name": "Wizard",
+		"Description": "",
+		"Probability": "1"
+	}]
+}

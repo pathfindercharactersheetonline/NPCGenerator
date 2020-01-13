@@ -12,9 +12,11 @@
 		"sourceTemplate": {
 			"id": "ui5template.basicSAPUI5ApplicationProject",
 			"version": "1.40.12"
+		},
+		"crossNavigation": {
+			"inbounds": {}
 		}
 	},
-
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -31,7 +33,6 @@
 			"phone": true
 		}
 	},
-
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
@@ -70,6 +71,10 @@
 			"template": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/Template.json"
+			},
+			"class": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/Templates.json"
 			}
 		},
 		"resources": {
@@ -88,7 +93,7 @@
 				"clearControlAggregation": false
 			},
 			"routes": [{
-				"name": "RouteMain",
+				"name": "TargetMain",
 				"pattern": "RouteMain",
 				"target": ["TargetMain"]
 			}, {
@@ -106,13 +111,17 @@
 			}, {
 				"name": "Template",
 				"pattern": "Templates/Template/{Id}",
-				"target": [
-					"Template"
-				]
+				"target": ["Template"]
 			}, {
 				"name": "Home",
 				"pattern": "",
 				"target": ["Home"]
+			}, {
+				"name": "Class",
+				"pattern": "Template/{TemplId}/Class/{ClassId}",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["Class"]
 			}],
 			"targets": {
 				"TargetMain": {
@@ -151,6 +160,14 @@
 					"viewId": "Home",
 					"viewName": "Home",
 					"viewLevel": 5
+				},
+				"Class": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "Class",
+					"viewLevel": 10,
+					"viewId": "Class"
 				}
 			}
 		}

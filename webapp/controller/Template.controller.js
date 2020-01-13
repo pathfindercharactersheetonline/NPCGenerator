@@ -17,7 +17,7 @@ sap.ui.define([
 			this.getView().bindElement({
 				path: "/Templates/" + oEvent.getParameter("arguments").Id
 			});
-
-		}
+		},
+		
 	});
 });

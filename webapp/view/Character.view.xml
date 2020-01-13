@@ -8,6 +8,8 @@
 				<core:Title text="{Name}"/>
 				<Label text="Name"/>
 				<Input value="{Name}"/>
+				<Label text="Surname"/>
+				<Input value="{Surname}"/>
 				<Label text="Race"/>
 				<Input value="{Race}"/>
 				<Label text="Age"/>

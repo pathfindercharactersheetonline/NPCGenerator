@@ -1432,6 +1432,11 @@
 			"Name": "None",
 			"Description": "",
 			"Probability": "1"
+		}],
+		"Class": [{
+			"Name": "Barbarian",
+			"Description": "",
+			"Probability": "1"
 		}]
 	}]
 }

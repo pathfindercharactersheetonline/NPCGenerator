@@ -28,7 +28,18 @@ sap.ui.define([
 				Id: oId
 			});
 		},
-
+		onNavToItemClass: function (oEvent, sTarget) {
+			var oItemPath = oEvent.getParameter("listItem").getBindingContext().getPath();
+			var aPathSplit = oItemPath.split("/");
+			var oTemplId = aPathSplit[2];
+			var oClassId = aPathSplit[4];
+			if (oTemplId !== undefined && oClassId !== undefined) {
+				UIComponent.getRouterFor(this).navTo(sTarget, {
+					TemplId: oTemplId,
+					ClassId: oClassId
+				});
+			}
+		},
 		onNavBack: function () {
 			var oHistory = History.getInstance();
 			var sPreviousHash = oHistory.getPreviousHash();
@@ -110,6 +121,7 @@ sap.ui.define([
 			default:
 				oNewLine.Name = this.getRandomObject.call(this, oTemplate.MaleName).Name;
 			}
+			oNewLine.Surname = this.getRandomObject.call(this, oTemplate.Surname).Name;
 			oNewLine.Race = this.getRandomObject.call(this, oTemplate.Race).Name;
 			oNewLine.Deity = this.getRandomObject.call(this, oTemplate.Deity).Name;
 			var sProfessionType = this.getRandomObject.call(this, oTemplate.ProfessionType).Name;
@@ -124,7 +136,7 @@ sap.ui.define([
 			oNewLine.Wealth = this.getRandomNumber.call(this, 1, 10);
 
 			oMassive.push(oNewLine);
-			this.getView().getModel().refresh();
+			this.getOwnerComponent().getModel("characters").refresh();
 			MessageToast.show(oNewLine.Name + " created");
 		}
 

@@ -8,6 +8,11 @@
 		"Description": "",
 		"Probability": "1"
 	},
+	"ClassProbabilityDescription": {
+		"Name": "",
+		"Description": "",
+		"Probability": "1"
+	},
 	"Template": {
 		"TemplateName": "",
 		"FemaleName": [{
@@ -1445,6 +1450,7 @@
 	},
 	"Character": {
 		"Name": "",
+		"Surname": "",
 		"Race": "",
 		"Age": 0,
 		"SubmissiveLeader": 0,
