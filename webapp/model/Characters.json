@@ -15,6 +15,14 @@
 		"Wealth": 3,
 		"Profession": "Singer",
 		"Deity": "None",
-		"Gender": "Male"
+		"Gender": "Male",
+		"Abilities": {
+			"Strength": "999",
+			"Dexterity": "999",
+			"Constitution": "999",
+			"Intelligence": "999",
+			"Wisdom": "999",
+			"Charisma": "999"
+		}
 	}]
 }
