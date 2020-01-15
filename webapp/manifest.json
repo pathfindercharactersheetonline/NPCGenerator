@@ -71,10 +71,6 @@
 			"template": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/Template.json"
-			},
-			"class": {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "model/Class.json"
 			}
 		},
 		"resources": {

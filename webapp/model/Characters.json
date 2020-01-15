@@ -16,13 +16,16 @@
 		"Profession": "Singer",
 		"Deity": "None",
 		"Gender": "Male",
-		"Abilities": {
-			"Strength": "999",
-			"Dexterity": "999",
-			"Constitution": "999",
-			"Intelligence": "999",
-			"Wisdom": "999",
-			"Charisma": "999"
+		"Class": {
+			"Name": "",
+			"Abilities": {
+				"Strength": "0",
+				"Dexterity": "0",
+				"Constitution": "0",
+				"Intelligence": "0",
+				"Wisdom": "0",
+				"Charisma": "0"
+			}
 		}
 	}]
 }

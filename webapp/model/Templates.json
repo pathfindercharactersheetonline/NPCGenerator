@@ -1438,12 +1438,132 @@
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
-				"Strength": "99999",
-				"Dexterity": "1",
-				"Constitution": "1",
-				"Intelligence": "1",
-				"Wisdom": "1",
-				"Charisma": "1"
+				"Strength": "0",
+				"Dexterity": "0",
+				"Constitution": "0",
+				"Intelligence": "0",
+				"Wisdom": "0",
+				"Charisma": "0"
+			}
+		}, {
+			"Name": "Bard",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": "0",
+				"Dexterity": "0",
+				"Constitution": "0",
+				"Intelligence": "0",
+				"Wisdom": "0",
+				"Charisma": "0"
+			}
+		}, {
+			"Name": "Cleric ",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": "0",
+				"Dexterity": "0",
+				"Constitution": "0",
+				"Intelligence": "0",
+				"Wisdom": "0",
+				"Charisma": "0"
+			}
+		}, {
+			"Name": "Druid ",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": "0",
+				"Dexterity": "0",
+				"Constitution": "0",
+				"Intelligence": "0",
+				"Wisdom": "0",
+				"Charisma": "0"
+			}
+		}, {
+			"Name": "Fighter ",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": "0",
+				"Dexterity": "0",
+				"Constitution": "0",
+				"Intelligence": "0",
+				"Wisdom": "0",
+				"Charisma": "0"
+			}
+		}, {
+			"Name": "Monk ",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": "0",
+				"Dexterity": "0",
+				"Constitution": "0",
+				"Intelligence": "0",
+				"Wisdom": "0",
+				"Charisma": "0"
+			}
+		}, {
+			"Name": "Paladin",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": "0",
+				"Dexterity": "0",
+				"Constitution": "0",
+				"Intelligence": "0",
+				"Wisdom": "0",
+				"Charisma": "0"
+			}
+		}, {
+			"Name": "Ranger",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": "0",
+				"Dexterity": "0",
+				"Constitution": "0",
+				"Intelligence": "0",
+				"Wisdom": "0",
+				"Charisma": "0"
+			}
+		}, {
+			"Name": "Rogue ",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": "0",
+				"Dexterity": "0",
+				"Constitution": "0",
+				"Intelligence": "0",
+				"Wisdom": "0",
+				"Charisma": "0"
+			}
+		}, {
+			"Name": "Sorcerer ",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": "0",
+				"Dexterity": "0",
+				"Constitution": "0",
+				"Intelligence": "0",
+				"Wisdom": "0",
+				"Charisma": "0"
+			}
+		}, {
+			"Name": "Wizard",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": "0",
+				"Dexterity": "0",
+				"Constitution": "0",
+				"Intelligence": "0",
+				"Wisdom": "0",
+				"Charisma": "0"
 			}
 		}]
 	}]

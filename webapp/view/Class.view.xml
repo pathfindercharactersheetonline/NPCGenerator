@@ -6,17 +6,17 @@
 			singleContainerFullSize="false" tooltip="{Name} {Description}" title="{Name} {Description}">
 			<f:content>
 				<Label text="Сила"/>
-				<Input value="{path:'Abilities/Strength', type:'sap.ui.model.type.Integer'}" type="Number" width="20%"/>
+				<Input value="{path:'Abilities/Strength', type:'sap.ui.model.type.Integer'}" type="Number" />
 				<Label text="Ловкость"/>
-				<Input value="{path:'Abilities/Dexterity', type:'sap.ui.model.type.Integer'}" type="Number" width="20%"/>
+				<Input value="{path:'Abilities/Dexterity', type:'sap.ui.model.type.Integer'}" type="Number" />
 				<Label text="Телосложение"/>
-				<Input value="{path:'Abilities/Constitution', type:'sap.ui.model.type.Integer'}" type="Number" width="20%"/>
+				<Input value="{path:'Abilities/Constitution', type:'sap.ui.model.type.Integer'}" type="Number" />
 				<Label text="Интеллект"/>
-				<Input value="{path:'Abilities/Intelligence', type:'sap.ui.model.type.Integer'}" type="Number" width="20%"/>
+				<Input value="{path:'Abilities/Intelligence', type:'sap.ui.model.type.Integer'}" type="Number" />
 				<Label text="Мудрость"/>
-				<Input value="{path:'Abilities/Wisdom', type:'sap.ui.model.type.Integer'}" type="Number" width="20%"/>
+				<Input value="{path:'Abilities/Wisdom', type:'sap.ui.model.type.Integer'}" type="Number" />
 				<Label text="Харизма"/>
-				<Input value="{path:'Abilities/Charisma', type:'sap.ui.model.type.Integer'}" type="Number" width="20%"/>
+				<Input value="{path:'Abilities/Charisma', type:'sap.ui.model.type.Integer'}" type="Number" />
 			</f:content>
 		</f:SimpleForm>
 		<footer>

@@ -134,6 +134,27 @@ sap.ui.define([
 			oNewLine.Motive.Survival = this.getRandomNumber.call(this, 1, 10);
 			oNewLine.Motive.InventionExploration = this.getRandomNumber.call(this, 1, 10);
 			oNewLine.Wealth = this.getRandomNumber.call(this, 1, 10);
+			var oClass = Object.assign({}, this.getRandomObject.call(this, oTemplate.Class));
+			oNewLine.Class = oClass;
+			var oAbilitiesNew = true;
+			var oAbilities = Object.keys(oNewLine.Class.Abilities);
+			for (var i = 0; i < oAbilities.length; i++) {
+				if (oNewLine.Class.Abilities[oAbilities[i]] !== "0") {
+					oAbilitiesNew = false;
+					break;
+				}
+			}
+			if (oAbilitiesNew) {
+				oNewLine.Class.Abilities = {
+					Strength: this.getRandomNumber.call(this, 1, 10),
+					Dexterity: this.getRandomNumber.call(this, 1, 10),
+					Constitution: this.getRandomNumber.call(this, 1, 10),
+					Intelligence: this.getRandomNumber.call(this, 1, 10),
+					Wisdom: this.getRandomNumber.call(this, 1, 10),
+					Charisma: this.getRandomNumber.call(this, 1, 10)
+
+				};
+			}
 
 			oMassive.push(oNewLine);
 			this.getOwnerComponent().getModel("characters").refresh();

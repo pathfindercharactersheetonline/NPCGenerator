@@ -7,7 +7,7 @@ sap.ui.define([
 	return Controller.extend("NPCGen.NPCGen.controller.Character", {
 
 		onInit: function () {
-			var oModel = sap.ui.getCore().byId("container-NPCGen---Template").getModel();//this.getOwnerComponent().getModel("class");
+			var oModel = this.getOwnerComponent().getModel("templates");
 			this.getView().setModel(oModel);
 			var oRouter = UIComponent.getRouterFor(this);
 			oRouter.getRoute("Class").attachPatternMatched(this._onObjectMatched, this);
