@@ -40,7 +40,7 @@
 				<Label text="Class"/>
 				<Input value="{Class/Name}"/>
 				<Label text="Lvl"/>
-				<Input value="{Class/Lvl}"/>
+				<Input value="{Lvl}"/>
 				<Label text="Label" width="100%" id="label23_1579547335326"/>
 				<core:Title text="Abilities"/>
 				<Label text="Сила"/>
