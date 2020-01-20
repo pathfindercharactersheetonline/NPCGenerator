@@ -32,7 +32,7 @@ sap.ui.define([
 				var oLvl = oModel.Lvl;
 				return;
 			}
-			return oValue;
+			return 0;
 			*/
 			return "+" + Math.floor((oValue - 10) / 2);
 		}
