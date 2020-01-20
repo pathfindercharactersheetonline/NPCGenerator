@@ -1,8 +1,8 @@
-<mvc:View controllerName="NPCGen.NPCGen.controller.Character" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
-	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	controllerName="NPCGen.NPCGen.controller.Character">
 	<Page>
 		<f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12"
-			adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="2" columnsM="2"
+			adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsM="2"
 			singleContainerFullSize="false">
 			<f:content>
 				<core:Title text="{Name}"/>
@@ -12,8 +12,6 @@
 				<Input value="{Surname}"/>
 				<Label text="Race"/>
 				<Input value="{Race}"/>
-				<Label text="Class"/>
-				<Input value="{Class/Name}"/>
 				<Label text="Age"/>
 				<Input value="{path:'Age', type:'sap.ui.model.type.Integer'}" type="Number"/>
 				<Label text="Leadership"/>
@@ -29,6 +27,7 @@
 				<Input value="{path:'Motive/Survival', type:'sap.ui.model.type.Integer'}" type="Number"/>
 				<Label text="InventionExploration"/>
 				<Input value="{path:'Motive/InventionExploration', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<!--<Label text="Label" width="100%" id="label22_1579547325596"/>-->
 				<core:Title text="Other"/>
 				<Label text="Wealth"/>
 				<Input value="{path:'Wealth', type:'sap.ui.model.type.Integer'}" type="Number"/>
@@ -38,19 +37,30 @@
 				<Input value="{Deity}"/>
 				<Label text="Gender"/>
 				<Input value="{Gender}"/>
+				<Label text="Class"/>
+				<Input value="{Class/Name}"/>
+				<Label text="Lvl"/>
+				<Input value="{Class/Lvl}"/>
+				<Label text="Label" width="100%" id="label23_1579547335326"/>
 				<core:Title text="Abilities"/>
 				<Label text="Сила"/>
-				<Input value="{path:'Class/Abilities/Strength', type:'sap.ui.model.type.Integer'}" type="Number" />
+				<Input value="{path:'Class/Abilities/Dexterity', type:'sap.ui.model.type.Integer'}" type="Number" 
+					description = "{path:'Class/Abilities/Dexterity', formatter: '.formatter.abilitiesMod'}" />
 				<Label text="Ловкость"/>
-				<Input value="{path:'Class/Abilities/Dexterity', type:'sap.ui.model.type.Integer'}" type="Number" />
+				<Input value="{path:'Class/Abilities/Strength', type:'sap.ui.model.type.Integer'}" type="Number"
+					description = "{path:'Class/Abilities/Strength', formatter: '.formatter.abilitiesMod'}"/>
 				<Label text="Телосложение"/>
-				<Input value="{path:'Class/Abilities/Constitution', type:'sap.ui.model.type.Integer'}" type="Number" />
+				<Input value="{path:'Class/Abilities/Constitution', type:'sap.ui.model.type.Integer'}" type="Number"
+					description = "{path:'Class/Abilities/Constitution', formatter: '.formatter.abilitiesMod'}"/>
 				<Label text="Интеллект"/>
-				<Input value="{path:'Class/Abilities/Intelligence', type:'sap.ui.model.type.Integer'}" type="Number" />
+				<Input value="{path:'Class/Abilities/Intelligence', type:'sap.ui.model.type.Integer'}" type="Number"
+					description = "{path:'Class/Abilities/Intelligence', formatter: '.formatter.abilitiesMod'}"/>
 				<Label text="Мудрость"/>
-				<Input value="{path:'Class/Abilities/Wisdom', type:'sap.ui.model.type.Integer'}" type="Number" />
+				<Input value="{path:'Class/Abilities/Wisdom', type:'sap.ui.model.type.Integer'}" type="Number"
+					description = "{path:'Class/Abilities/Wisdom', formatter: '.formatter.abilitiesMod'}"/>
 				<Label text="Харизма"/>
-				<Input value="{path:'Class/Abilities/Charisma', type:'sap.ui.model.type.Integer'}" type="Number" />
+				<Input value="{path:'Class/Abilities/Charisma', type:'sap.ui.model.type.Integer'}" type="Number"
+					description = "{path:'Class/Abilities/Charisma', formatter: '.formatter.abilitiesMod'}"/>
 				<!--"Race": "Human",
 				"Age": 30,
 				"SubmissiveLeader": 4,
@@ -74,5 +84,7 @@
 				</contentLeft>
 			</Bar>
 		</footer>
+		 
+	 
 	</Page>
 </mvc:View>

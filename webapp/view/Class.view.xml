@@ -1,22 +1,25 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
-	controllerName="NPCGen.NPCGen.controller.Class">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" controllerName="NPCGen.NPCGen.controller.Class">
 	<Page>
-		<f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12"
-			adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="2" columnsM="2"
-			singleContainerFullSize="false" tooltip="{Name} {Description}" title="{Name} {Description}">
+		<f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="2" columnsM="2" singleContainerFullSize="false" tooltip="{Name} {Description}" title="{Name} {Description}">
 			<f:content>
 				<Label text="Сила"/>
-				<Input value="{path:'Abilities/Strength', type:'sap.ui.model.type.Integer'}" type="Number" />
+				<Input value="{path:'Abilities/Strength/From', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<Input value="{path:'Abilities/Strength/To', type:'sap.ui.model.type.Integer'}" type="Number" textAlign="Left"/>
 				<Label text="Ловкость"/>
-				<Input value="{path:'Abilities/Dexterity', type:'sap.ui.model.type.Integer'}" type="Number" />
+				<Input value="{path:'Abilities/Dexterity/From', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<Input value="{path:'Abilities/Dexterity/To', type:'sap.ui.model.type.Integer'}" type="Number" textAlign="Left"/>
 				<Label text="Телосложение"/>
-				<Input value="{path:'Abilities/Constitution', type:'sap.ui.model.type.Integer'}" type="Number" />
+				<Input value="{path:'Abilities/Constitution/From', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<Input value="{path:'Abilities/Constitution/To', type:'sap.ui.model.type.Integer'}" type="Number" textAlign="Left"/>
 				<Label text="Интеллект"/>
-				<Input value="{path:'Abilities/Intelligence', type:'sap.ui.model.type.Integer'}" type="Number" />
+				<Input value="{path:'Abilities/Intelligence/From', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<Input value="{path:'Abilities/Intelligence/To', type:'sap.ui.model.type.Integer'}" type="Number" textAlign="Left"/>
 				<Label text="Мудрость"/>
-				<Input value="{path:'Abilities/Wisdom', type:'sap.ui.model.type.Integer'}" type="Number" />
+				<Input value="{path:'Abilities/Wisdom/From', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<Input value="{path:'Abilities/Wisdom/To', type:'sap.ui.model.type.Integer'}" type="Number" textAlign="Left"/>
 				<Label text="Харизма"/>
-				<Input value="{path:'Abilities/Charisma', type:'sap.ui.model.type.Integer'}" type="Number" />
+				<Input value="{path:'Abilities/Charisma/From', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<Input value="{path:'Abilities/Charisma/To', type:'sap.ui.model.type.Integer'}" type="Number" textAlign="Left"/>
 			</f:content>
 		</f:SimpleForm>
 		<footer>

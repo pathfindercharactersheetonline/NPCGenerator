@@ -13,12 +13,30 @@
 		"Description": "",
 		"Probability": "1",
 		"Abilities": {
-			"Strength": "0",
-			"Dexterity": "0",
-			"Constitution": "0",
-			"Intelligence": "0",
-			"Wisdom": "0",
-			"Charisma": "0"
+			"Strength": {
+				"From": "0",
+				"To": "20"
+			},
+			"Dexterity": {
+				"From": "0",
+				"To": "20"
+			},
+			"Constitution": {
+				"From": "0",
+				"To": "20"
+			},
+			"Intelligence": {
+				"From": "0",
+				"To": "20"
+			},
+			"Wisdom": {
+				"From": "0",
+				"To": "20"
+			},
+			"Charisma": {
+				"From": "0",
+				"To": "20"
+			}
 		}
 	},
 	"Template": {
@@ -1473,6 +1491,7 @@
 		"Profession": "",
 		"Deity": "",
 		"Gender": "",
+		"Lvl":1,
 		"Class": {
 			"Name": "",
 			"Description": "",

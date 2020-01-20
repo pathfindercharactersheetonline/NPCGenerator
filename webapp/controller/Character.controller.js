@@ -1,11 +1,12 @@
 sap.ui.define([
 	"NPCGen/NPCGen/controller/Base.controller",
-	"sap/ui/core/UIComponent"
-], function (Controller, UIComponent) {
+	"sap/ui/core/UIComponent",
+	"NPCGen/NPCGen/model/formatter"
+], function (Controller, UIComponent, formatter) {
 	"use strict";
 
 	return Controller.extend("NPCGen.NPCGen.controller.Character", {
-
+		formatter: formatter,
 		onInit: function () {
 			var oModel = this.getOwnerComponent().getModel("characters");
 			this.getView().setModel(oModel);
@@ -17,7 +18,7 @@ sap.ui.define([
 			this.getView().bindElement({
 				path: "/Characters/" + oEvent.getParameter("arguments").Id
 			});
-
+	 
 		}
 	});
 });

@@ -1438,132 +1438,330 @@
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
-				"Strength": "0",
-				"Dexterity": "0",
-				"Constitution": "0",
-				"Intelligence": "0",
-				"Wisdom": "0",
-				"Charisma": "0"
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
 			}
 		}, {
 			"Name": "Bard",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
-				"Strength": "0",
-				"Dexterity": "0",
-				"Constitution": "0",
-				"Intelligence": "0",
-				"Wisdom": "0",
-				"Charisma": "0"
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
 			}
 		}, {
 			"Name": "Cleric ",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
-				"Strength": "0",
-				"Dexterity": "0",
-				"Constitution": "0",
-				"Intelligence": "0",
-				"Wisdom": "0",
-				"Charisma": "0"
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
 			}
 		}, {
 			"Name": "Druid ",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
-				"Strength": "0",
-				"Dexterity": "0",
-				"Constitution": "0",
-				"Intelligence": "0",
-				"Wisdom": "0",
-				"Charisma": "0"
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
 			}
 		}, {
 			"Name": "Fighter ",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
-				"Strength": "0",
-				"Dexterity": "0",
-				"Constitution": "0",
-				"Intelligence": "0",
-				"Wisdom": "0",
-				"Charisma": "0"
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
 			}
 		}, {
 			"Name": "Monk ",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
-				"Strength": "0",
-				"Dexterity": "0",
-				"Constitution": "0",
-				"Intelligence": "0",
-				"Wisdom": "0",
-				"Charisma": "0"
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
 			}
 		}, {
 			"Name": "Paladin",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
-				"Strength": "0",
-				"Dexterity": "0",
-				"Constitution": "0",
-				"Intelligence": "0",
-				"Wisdom": "0",
-				"Charisma": "0"
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
 			}
 		}, {
 			"Name": "Ranger",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
-				"Strength": "0",
-				"Dexterity": "0",
-				"Constitution": "0",
-				"Intelligence": "0",
-				"Wisdom": "0",
-				"Charisma": "0"
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
 			}
 		}, {
 			"Name": "Rogue ",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
-				"Strength": "0",
-				"Dexterity": "0",
-				"Constitution": "0",
-				"Intelligence": "0",
-				"Wisdom": "0",
-				"Charisma": "0"
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
 			}
 		}, {
 			"Name": "Sorcerer ",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
-				"Strength": "0",
-				"Dexterity": "0",
-				"Constitution": "0",
-				"Intelligence": "0",
-				"Wisdom": "0",
-				"Charisma": "0"
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
 			}
 		}, {
 			"Name": "Wizard",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
-				"Strength": "0",
-				"Dexterity": "0",
-				"Constitution": "0",
-				"Intelligence": "0",
-				"Wisdom": "0",
-				"Charisma": "0"
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
 			}
 		}]
 	}]
