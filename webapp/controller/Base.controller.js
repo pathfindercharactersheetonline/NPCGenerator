@@ -3,8 +3,9 @@ sap.ui.define([
 	"NPCGen/NPCGen/model/formatter",
 	'sap/m/MessageToast',
 	"sap/ui/core/UIComponent",
-	"sap/ui/core/routing/History"
-], function (Controller, formatter, MessageToast, UIComponent, History) {
+	"sap/ui/core/routing/History",
+	"sap/ui/core/Fragment"
+], function (Controller, formatter, MessageToast, UIComponent, History,Fragment) {
 	"use strict";
 
 	return Controller.extend("NPCGen.NPCGen.controller.Base", {
@@ -51,7 +52,37 @@ sap.ui.define([
 				oRouter.navTo("Home", true);
 			}
 		},
+		onExtractorModel: function (oEvent, oPath, oAction) {
+			var oView		= this.getView();
+			var oFragment	= undefined;//".fragment";
+			switch (oAction) {
+				case "download":
+					oFragment = "downloadModelDialog";
+					break;
+				case "upload":
+					oFragment = "uploadModelDialog";
+					break;
+				default:
+			}
+			// create dialog lazily
+			if (!this.byId(oFragment)) {
+				// load asynchronous XML fragment
+				Fragment.load({
+					id: oView.getId(),
+					name: "NPCGen.NPCGen.fragment." + oFragment
+				}).then(function (oDialog) {
+					// connect dialog to the root view of this component (models, lifecycle)
+					oView.addDependent(oDialog);
+					oDialog.bindElement(oPath);
+					oDialog.open();
+				});
+			} else {
+				this.byId(oFragment).bindElement(oPath);
+				this.byId(oFragment).open();
+			}
 
+			return;
+		},
 		onNew: function (oEvent, oMassivePath, oTemplateName) {
 			var oPath = oMassivePath;
 			var oMassive = this.getView().getModel().getProperty(oPath);

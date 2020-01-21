@@ -44,23 +44,23 @@
 				<Label text="Label" width="100%" id="label23_1579547335326"/>
 				<core:Title text="Abilities"/>
 				<Label text="Сила"/>
-				<Input value="{path:'Class/Abilities/Dexterity', type:'sap.ui.model.type.Integer'}" type="Number" 
-					description = "{path:'Class/Abilities/Dexterity', formatter: '.formatter.abilitiesMod'}" />
+				<Input value="{path:'Class/Abilities/Dexterity', type:'sap.ui.model.type.Integer'}" type="Number"
+				 	description="{path:'Class/Abilities/Dexterity', formatter: '.formatter.abilitiesMod'}" />
 				<Label text="Ловкость"/>
 				<Input value="{path:'Class/Abilities/Strength', type:'sap.ui.model.type.Integer'}" type="Number"
-					description = "{path:'Class/Abilities/Strength', formatter: '.formatter.abilitiesMod'}"/>
+					description="{path:'Class/Abilities/Strength', formatter: '.formatter.abilitiesMod'}"/>
 				<Label text="Телосложение"/>
 				<Input value="{path:'Class/Abilities/Constitution', type:'sap.ui.model.type.Integer'}" type="Number"
-					description = "{path:'Class/Abilities/Constitution', formatter: '.formatter.abilitiesMod'}"/>
+					description="{path:'Class/Abilities/Constitution', formatter: '.formatter.abilitiesMod'}"/>
 				<Label text="Интеллект"/>
 				<Input value="{path:'Class/Abilities/Intelligence', type:'sap.ui.model.type.Integer'}" type="Number"
-					description = "{path:'Class/Abilities/Intelligence', formatter: '.formatter.abilitiesMod'}"/>
+					description="{path:'Class/Abilities/Intelligence', formatter: '.formatter.abilitiesMod'}"/>
 				<Label text="Мудрость"/>
 				<Input value="{path:'Class/Abilities/Wisdom', type:'sap.ui.model.type.Integer'}" type="Number"
-					description = "{path:'Class/Abilities/Wisdom', formatter: '.formatter.abilitiesMod'}"/>
+					description="{path:'Class/Abilities/Wisdom', formatter: '.formatter.abilitiesMod'}"/>
 				<Label text="Харизма"/>
 				<Input value="{path:'Class/Abilities/Charisma', type:'sap.ui.model.type.Integer'}" type="Number"
-					description = "{path:'Class/Abilities/Charisma', formatter: '.formatter.abilitiesMod'}"/>
+					description="{path:'Class/Abilities/Charisma', formatter: '.formatter.abilitiesMod'}"/>
 				<!--"Race": "Human",
 				"Age": 30,
 				"SubmissiveLeader": 4,
@@ -84,7 +84,5 @@
 				</contentLeft>
 			</Bar>
 		</footer>
-		 
-	 
 	</Page>
 </mvc:View>

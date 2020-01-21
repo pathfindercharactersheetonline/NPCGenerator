@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" class="viewPadding" xmlns:u="sap.ui.unified">
+	<Dialog id="uploadModelDialog" title="Загрузка">
+ 	<l:VerticalLayout>
+		<u:FileUploader
+			id="fileUpload"
+			name="myFileUpload"
+			uploadUrl="Upload/"
+			tooltip="Загрузка"
+			uploadComplete="handleUploadModel"/>
+		<Button
+			text="Загрузка"
+			press="handleUploadPress"/>
+	</l:VerticalLayout> 
+	</Dialog>
+</core:FragmentDefinition>

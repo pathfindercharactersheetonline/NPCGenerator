@@ -34,7 +34,16 @@ sap.ui.define([
 			}
 			return 0;
 			*/
-			return "+" + Math.floor((oValue - 10) / 2);
+			switch (oValue) {
+				case null: 
+					return null;
+				case undefined:
+					return undefined;
+				default:
+					return "+" + Math.floor((oValue - 10) / 2);
+			}
+			 
+			
 		}
 	};
 });

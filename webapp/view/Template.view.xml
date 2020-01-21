@@ -1,5 +1,4 @@
-<mvc:View controllerName="NPCGen.NPCGen.controller.Template" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
-	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" controllerName="NPCGen.NPCGen.controller.Template">
 	<Page showHeader="false">
 		<IconTabBar expandable="false" class="sapUiResponsiveContentPadding">
 			<items>
@@ -11,17 +10,15 @@
 									<Table items="{ path: 'FemaleName'}" growing="true">
 										<headerToolbar>
 											<Toolbar>
-												<Button icon="sap-icon://add"
-													press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/FemaleName', '/NameProbability')"/>
-												<Button icon="sap-icon://delete" text="Delete all"
-													press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/FemaleName')"/>
+												<Button icon="sap-icon://add" press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/FemaleName', '/NameProbability')"/>
+												<Button icon="sap-icon://delete" text="Delete all" press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/FemaleName')"/>
 											</Toolbar>
 										</headerToolbar>
 										<columns>
-											<Column >
+											<Column>
 												<Text text="Name"/>
 											</Column>
-											<Column >
+											<Column>
 												<Text text="Probabilty"/>
 											</Column>
 											<Column/>
@@ -35,8 +32,7 @@
 													<Input value="{Probability}"/>
 												</cells>
 												<cells>
-													<Button icon="sap-icon://delete"
-														press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/FemaleName')"/>
+													<Button icon="sap-icon://delete" press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/FemaleName')"/>
 												</cells>
 											</ColumnListItem>
 										</items>
@@ -54,17 +50,15 @@
 									<Table items="{ path: 'MaleName'}" growing="true">
 										<headerToolbar>
 											<Toolbar>
-												<Button icon="sap-icon://add"
-													press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/MaleName', '/NameProbability')"/>
-												<Button icon="sap-icon://delete" text="Delete all"
-													press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/MaleName')"/>
+												<Button icon="sap-icon://add" press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/MaleName', '/NameProbability')"/>
+												<Button icon="sap-icon://delete" text="Delete all" press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/MaleName')"/>
 											</Toolbar>
 										</headerToolbar>
 										<columns>
-											<Column >
+											<Column>
 												<Text text="Name"/>
 											</Column>
-											<Column >
+											<Column>
 												<Text text="Probabilty"/>
 											</Column>
 											<Column/>
@@ -78,8 +72,7 @@
 													<Input value="{Probability}"/>
 												</cells>
 												<cells>
-													<Button icon="sap-icon://delete"
-														press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/MaleName')"/>
+													<Button icon="sap-icon://delete" press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/MaleName')"/>
 												</cells>
 											</ColumnListItem>
 										</items>
@@ -97,17 +90,15 @@
 									<Table items="{ path: 'Surname'}" growing="true">
 										<headerToolbar>
 											<Toolbar>
-												<Button icon="sap-icon://add"
-													press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Surname', '/NameProbability')"/>
-												<Button icon="sap-icon://delete" text="Delete all"
-													press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Surname')"/>
+												<Button icon="sap-icon://add" press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Surname', '/NameProbability')"/>
+												<Button icon="sap-icon://delete" text="Delete all" press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Surname')"/>
 											</Toolbar>
 										</headerToolbar>
 										<columns>
-											<Column >
+											<Column>
 												<Text text="Name"/>
 											</Column>
-											<Column >
+											<Column>
 												<Text text="Probabilty"/>
 											</Column>
 											<Column/>
@@ -121,8 +112,7 @@
 													<Input value="{Probability}"/>
 												</cells>
 												<cells>
-													<Button icon="sap-icon://delete"
-														press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Surname')"/>
+													<Button icon="sap-icon://delete" press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Surname')"/>
 												</cells>
 											</ColumnListItem>
 										</items>
@@ -140,17 +130,15 @@
 									<Table items="{ path: 'ProfessionType'}" growing="true">
 										<headerToolbar>
 											<Toolbar>
-												<Button icon="sap-icon://add"
-													press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/ProfessionType', '/NameProbability')"/>
-												<Button icon="sap-icon://delete" text="Delete all"
-													press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/ProfessionType')"/>
+												<Button icon="sap-icon://add" press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/ProfessionType', '/NameProbability')"/>
+												<Button icon="sap-icon://delete" text="Delete all" press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/ProfessionType')"/>
 											</Toolbar>
 										</headerToolbar>
 										<columns>
-											<Column >
+											<Column>
 												<Text text="Name"/>
 											</Column>
-											<Column >
+											<Column>
 												<Text text="Probabilty"/>
 											</Column>
 											<Column/>
@@ -164,8 +152,7 @@
 													<Input value="{Probability}"/>
 												</cells>
 												<cells>
-													<Button icon="sap-icon://delete"
-														press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/ProfessionType')"/>
+													<Button icon="sap-icon://delete" press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/ProfessionType')"/>
 												</cells>
 											</ColumnListItem>
 										</items>
@@ -183,17 +170,15 @@
 									<Table items="{ path: 'Race'}" growing="true">
 										<headerToolbar>
 											<Toolbar>
-												<Button icon="sap-icon://add"
-													press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Race', '/NameProbability')"/>
-												<Button icon="sap-icon://delete" text="Delete all"
-													press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Race')"/>
+												<Button icon="sap-icon://add" press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Race', '/NameProbability')"/>
+												<Button icon="sap-icon://delete" text="Delete all" press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Race')"/>
 											</Toolbar>
 										</headerToolbar>
 										<columns>
-											<Column >
+											<Column>
 												<Text text="Name"/>
 											</Column>
-											<Column >
+											<Column>
 												<Text text="Probabilty"/>
 											</Column>
 											<Column/>
@@ -207,8 +192,7 @@
 													<Input value="{Probability}"/>
 												</cells>
 												<cells>
-													<Button icon="sap-icon://delete"
-														press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Race')"/>
+													<Button icon="sap-icon://delete" press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Race')"/>
 												</cells>
 											</ColumnListItem>
 										</items>
@@ -226,17 +210,15 @@
 									<Table items="{ path: 'Gender'}" growing="true">
 										<headerToolbar>
 											<Toolbar>
-												<Button icon="sap-icon://add"
-													press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Gender', '/NameProbability')"/>
-												<Button icon="sap-icon://delete" text="Delete all"
-													press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Gender')"/>
+												<Button icon="sap-icon://add" press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Gender', '/NameProbability')"/>
+												<Button icon="sap-icon://delete" text="Delete all" press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Gender')"/>
 											</Toolbar>
 										</headerToolbar>
 										<columns>
-											<Column >
+											<Column>
 												<Text text="Name"/>
 											</Column>
-											<Column >
+											<Column>
 												<Text text="Probabilty"/>
 											</Column>
 											<Column/>
@@ -250,8 +232,7 @@
 													<Input value="{Probability}"/>
 												</cells>
 												<cells>
-													<Button icon="sap-icon://delete"
-														press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Gender')"/>
+													<Button icon="sap-icon://delete" press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Gender')"/>
 												</cells>
 											</ColumnListItem>
 										</items>
@@ -269,20 +250,18 @@
 									<Table items="{ path: 'Deity'}" growing="true">
 										<headerToolbar>
 											<Toolbar>
-												<Button icon="sap-icon://add"
-													press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Deity', '/NameProbabilityDescription')"/>
-												<Button icon="sap-icon://delete" text="Delete all"
-													press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Deity')"/>
+												<Button icon="sap-icon://add" press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Deity', '/NameProbabilityDescription')"/>
+												<Button icon="sap-icon://delete" text="Delete all" press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Deity')"/>
 											</Toolbar>
 										</headerToolbar>
 										<columns>
-											<Column >
+											<Column>
 												<Text text="Name"/>
 											</Column>
-											<Column >
+											<Column>
 												<Text text="Description"/>
 											</Column>
-											<Column >
+											<Column>
 												<Text text="Probabilty"/>
 											</Column>
 											<Column/>
@@ -299,8 +278,7 @@
 													<Input value="{Probability}"/>
 												</cells>
 												<cells>
-													<Button icon="sap-icon://delete"
-														press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Deity')"/>
+													<Button icon="sap-icon://delete" press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Deity')"/>
 												</cells>
 											</ColumnListItem>
 										</items>
@@ -315,23 +293,25 @@
 						<l:BlockLayoutRow>
 							<l:BlockLayoutCell width="1">
 								<ScrollContainer>
-									<Table items="{ path: 'Class'}" growing="true"  itemPress=".onNavToItemClass.call($controller, $event, 'Class')">
+									<Table items="{ path: 'Class'}" growing="true" itemPress=".onNavToItemClass.call($controller, $event, 'Class')">
 										<headerToolbar>
 											<Toolbar>
-												<Button icon="sap-icon://add"
-													press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Class/', '/ClassProbabilityDescription')"/>
-												<Button icon="sap-icon://delete" text="Delete all"
-													press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Class')"/>
+												<Button icon="sap-icon://add" press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Class/', '/ClassProbabilityDescription')"/>
+												<Button icon="sap-icon://delete" text="Delete all" press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Class')"/>
+												<ToolbarSpacer/>
+												<Text text="Уровень" fieldGroupIds="gLvl"/>
+												<Input id="lvlFrom" value="{ path:'Lvl/From' }" liveChange="handleLiveChangeLvl" width="10%" visible="true" type="Number" fieldGroupIds="gLvl" fieldWidth="10%"/>
+												<Input id="lvlTo"   value="{ path:'Lvl/To'   }" liveChange="handleLiveChangeLvl" width="10%" visible="true" type="Number" fieldGroupIds="gLvl" fieldWidth="10%"  />
 											</Toolbar>
 										</headerToolbar>
 										<columns>
-											<Column >
+											<Column>
 												<Text text="Name"/>
 											</Column>
-											<Column >
+											<Column>
 												<Text text="Description"/>
 											</Column>
-											<Column >
+											<Column>
 												<Text text="Probabilty"/>
 											</Column>
 											<Column/>
@@ -348,8 +328,7 @@
 													<Input value="{Probability}"/>
 												</cells>
 												<cells>
-													<Button icon="sap-icon://delete"
-														press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Class')"/>
+													<Button icon="sap-icon://delete" press=".onDelete.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Class')"/>
 												</cells>
 											</ColumnListItem>
 										</items>

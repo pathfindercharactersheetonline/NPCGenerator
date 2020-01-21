@@ -1,6 +1,10 @@
 {
 	"Templates": [{
 		"TemplateName": "Base Template",
+		"Lvl": {
+			"From": "1",
+			"To": "20"
+		},
 		"FemaleName": [{
 			"Name": "Аделаида",
 			"Probability": "1"
