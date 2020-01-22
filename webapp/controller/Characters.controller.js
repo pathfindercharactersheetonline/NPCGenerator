@@ -12,7 +12,6 @@ sap.ui.define([
 				path: "/Characters"
 			});
 		},
-
 		onGenerateCharacter: function (oEvent) {
 			var oTemplateModel = this.getOwnerComponent().getModel("templates");
 			var oModel = this.getView().getModel();

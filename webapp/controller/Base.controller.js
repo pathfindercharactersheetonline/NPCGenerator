@@ -4,8 +4,10 @@ sap.ui.define([
 	'sap/m/MessageToast',
 	"sap/ui/core/UIComponent",
 	"sap/ui/core/routing/History",
-	"sap/ui/core/Fragment"
-], function (Controller, formatter, MessageToast, UIComponent, History,Fragment) {
+	"sap/ui/core/Fragment",
+	"sap/ui/core/util/File",
+	"sap/ui/model/json/JSONModel",
+], function (Controller, formatter, MessageToast, UIComponent, History, Fragment, File,JSONModel) {
 	"use strict";
 
 	return Controller.extend("NPCGen.NPCGen.controller.Base", {
@@ -52,36 +54,48 @@ sap.ui.define([
 				oRouter.navTo("Home", true);
 			}
 		},
-		onExtractorModel: function (oEvent, oPath, oAction) {
-			var oView		= this.getView();
-			var oFragment	= undefined;//".fragment";
-			switch (oAction) {
-				case "download":
-					oFragment = "downloadModelDialog";
-					break;
-				case "upload":
-					oFragment = "uploadModelDialog";
-					break;
-				default:
+
+		onHandleUploadPress: function (oEvent) {
+			var DomRef = sap.ui.getCore().byId("fileUpload").getFocusDomRef();
+			if(!DomRef) return;
+			var oFile = DomRef.files[0]
+			if(!oFile) return;
+			
+			var reader = new FileReader();
+			reader.controller = this
+			reader.onload = function(oEvent) {
+				if(!oEvent) return;
+				var oModel = new JSONModel(JSON.parse(oEvent.target.result));
+				this.controller.oView.setModel(oModel);
+				this.controller.oView.getModel().refresh();
+				this.controller.oView.getElementBinding().refresh(true);
 			}
-			// create dialog lazily
-			if (!this.byId(oFragment)) {
-				// load asynchronous XML fragment
-				Fragment.load({
-					id: oView.getId(),
-					name: "NPCGen.NPCGen.fragment." + oFragment
-				}).then(function (oDialog) {
-					// connect dialog to the root view of this component (models, lifecycle)
-					oView.addDependent(oDialog);
-					oDialog.bindElement(oPath);
-					oDialog.open();
-				});
-			} else {
-				this.byId(oFragment).bindElement(oPath);
-				this.byId(oFragment).open();
+			reader.readAsBinaryString(oFile);
+		},
+		onExtractorModel: function (oEvent, oPath, oAction) {
+			var oView = this.getView();
+			var oFragment = undefined; //".fragment";
+			switch (oAction) {
+			case "download":
+				oPath = oPath.slice(1);
+				var oModel = this.getView().getModel().oData;
+				var sModel = JSON.stringify(oModel);
+				File.save(sModel, oPath, "json", "application/json", undefined, undefined);
+				break;
+			case "upload":
+				oFragment = "uploadModelDialog";
+				if (!this._oDialog) {
+					this._oDialog = sap.ui.xmlfragment("NPCGen.NPCGen.fragment." + oFragment, this);
+					this.getView().addDependent(this._oDialog);
+					this._oDialog.open();
+				} else {
+					this._oDialog.open();
+				}
+				break;
+			default:
+				break;
 			}
 
-			return;
 		},
 		onNew: function (oEvent, oMassivePath, oTemplateName) {
 			var oPath = oMassivePath;
@@ -167,16 +181,15 @@ sap.ui.define([
 			oNewLine.Wealth = this.getRandomNumber.call(this, 1, 10);
 			var oClass = Object.assign({}, this.getRandomObject.call(this, oTemplate.Class));
 
-			oNewLine.Class.Name =  oClass.Name;
+			oNewLine.Class.Name = oClass.Name;
 			oNewLine.Class.Probability = oClass.Probability;
 			oNewLine.Class.Description = oClass.Description;
 			var oAbilities = Object.keys(oNewLine.Class.Abilities);
 			for (var i = 0; i < oAbilities.length; i++) {
-			    oNewLine.Class.Abilities[oAbilities[i]] = this.getRandomNumber.call(this, parseInt( oClass.Abilities[oAbilities[i]].From ), 
-																						  parseInt( oClass.Abilities[oAbilities[i]].To   ) );  
+				oNewLine.Class.Abilities[oAbilities[i]] = this.getRandomNumber.call(this, parseInt(oClass.Abilities[oAbilities[i]].From),
+					parseInt(oClass.Abilities[oAbilities[i]].To));
 			}
-			
-			
+
 			oMassive.push(oNewLine);
 			this.getOwnerComponent().getModel("characters").refresh();
 			MessageToast.show(oNewLine.Name + " created");
