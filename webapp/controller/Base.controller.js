@@ -98,6 +98,7 @@ sap.ui.define([
 				}
 			};
 			reader.readAsText(oFile);
+			this.onHandleUploadClose(oEvent);
 		},
 		onDownload: function (oEvent, oPath) {
 			oPath = oPath.slice(1);
