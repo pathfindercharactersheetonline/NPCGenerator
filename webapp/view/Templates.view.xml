@@ -13,8 +13,10 @@
 									<Button icon="sap-icon://delete" text="Delete all"
 										press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath())"/>
 									<ToolbarSpacer/>
-									<Button icon="sap-icon://download" press=".onExtractorModel.call($controller,$event, $controller.getView().getBindingContext().getPath(), 'download')"/> 
-									<Button icon="sap-icon://upload"   press=".onExtractorModel.call($controller,$event, $controller.getView().getBindingContext().getPath(), 'upload')"/>		
+									<Button icon="sap-icon://download"
+										press=".onDownload.call($controller,$event, $controller.getView().getBindingContext().getPath())"/>
+									<Button icon="sap-icon://upload"
+										press=".onOpenFragment.call($controller,$event, $controller.getView().getBindingContext().getPath(), 'upload')"/>
 								</Toolbar>
 							</headerToolbar>
 							<columns>

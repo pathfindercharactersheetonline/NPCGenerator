@@ -1,15 +1,11 @@
-<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified"
-	class="viewPadding">
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" class="viewPadding" height="100%">
 	<Dialog id="uploadModelDialog" title="Загрузка">
 		<l:VerticalLayout>
-			<u:FileUploader id="fileUpload" name="myFileUpload"  tooltip="Загрузка" uploadComplete="onHandleUploadComplete"
-			change="onHandleValueChange"
-			typeMissmatch="onHandleTypeMissmatch"
-			style="Emphasized"
-			fileType="json"
-			
-			/>
-			<Button text="Загрузка" press="onHandleUploadPress"/>
+			<u:FileUploader id="fileUpload" name="myFileUpload" tooltip="Загрузка" uploadComplete="onHandleUploadComplete" change="onHandleValueChange" typeMissmatch="onHandleTypeMissmatch" style="Emphasized" fileType="json" mimeType="application/json" sameFilenameAllowed="true"/>
+			<VBox width="300px" direction="Row" alignItems="Start" alignContent="Center" displayInline="true">
+				<Button text="Загрузить" press="onHandleUploadPress" type="Accept"/>
+				<Button text="Закрыть" press="onHandleUploadClose" type="Reject"/>
+			</VBox>
 		</l:VerticalLayout>
 	</Dialog>
 </core:FragmentDefinition>

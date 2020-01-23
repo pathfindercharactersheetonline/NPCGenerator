@@ -1,13 +1,13 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"NPCGen/NPCGen/model/formatter",
-	'sap/m/MessageToast',
+	"sap/m/MessageToast",
 	"sap/ui/core/UIComponent",
 	"sap/ui/core/routing/History",
 	"sap/ui/core/Fragment",
 	"sap/ui/core/util/File",
-	"sap/ui/model/json/JSONModel",
-], function (Controller, formatter, MessageToast, UIComponent, History, Fragment, File,JSONModel) {
+	"sap/ui/model/json/JSONModel"
+], function (Controller, formatter, MessageToast, UIComponent, History, Fragment, File, JSONModel) {
 	"use strict";
 
 	return Controller.extend("NPCGen.NPCGen.controller.Base", {
@@ -54,48 +54,77 @@ sap.ui.define([
 				oRouter.navTo("Home", true);
 			}
 		},
-
-		onHandleUploadPress: function (oEvent) {
-			var DomRef = sap.ui.getCore().byId("fileUpload").getFocusDomRef();
-			if(!DomRef) return;
-			var oFile = DomRef.files[0]
-			if(!oFile) return;
-			
-			var reader = new FileReader();
-			reader.controller = this
-			reader.onload = function(oEvent) {
-				if(!oEvent) return;
-				var oModel = new JSONModel(JSON.parse(oEvent.target.result));
-				this.controller.oView.setModel(oModel);
-				this.controller.oView.getModel().refresh();
-				this.controller.oView.getElementBinding().refresh(true);
-			}
-			reader.readAsBinaryString(oFile);
+		onHandleUploadClose: function (oEvent) {
+			this._oDialog.destroy();
+			this._oDialog = undefined;
 		},
-		onExtractorModel: function (oEvent, oPath, oAction) {
-			var oView = this.getView();
-			var oFragment = undefined; //".fragment";
+		onHandleUploadPress: function (oEvent) {
+			var oId = this.oView.getId() + "--fileUpload";
+			var DomRef = sap.ui.getCore().byId(oId).getFocusDomRef();
+			if (!DomRef) {
+				MessageToast.show("Файл не определён");
+				return;
+			}
+			var oFile = DomRef.files[0];
+			if (!oFile) {
+				MessageToast.show("Файл не определён");
+				return;
+			}
+
+			var reader = new FileReader();
+			reader.controller = this;
+			reader.onload = function (oEvent) {
+				var oMsg = undefined;
+				var oViewName = this.controller.getView().getId().slice(19);
+				var oData = JSON.parse(oEvent.target.result);
+				if (oData) {
+					var oFileData = Object.keys(oData).toLocaleString();
+					if (oFileData === oViewName) {
+						var oModel = this.controller.oView.getModel();
+						if (oData.Characters || oData.Templates) {
+							oModel.oData = oData;
+							oModel.refresh();
+						} else {
+							oMsg = "Модель данных не инициализирована";
+						}
+					} else {
+						oMsg = "Файл не совпадает с шаблоном";
+					}
+				} else {
+					oMsg = "Не удалось преоброзовать JSON";
+				}
+				if (oMsg) {
+					MessageToast.show(oMsg);
+				}
+			};
+			reader.readAsText(oFile);
+		},
+		onDownload: function (oEvent, oPath) {
+			oPath = oPath.slice(1);
+			var oModel = this.getView().getModel().oData;
+			var sModel = JSON.stringify(oModel);
+			File.save(sModel, oPath, "json", "application/json", undefined, true);
+		},
+		onOpenFragment: function (oEvent, oPath, oAction) {
+			var oFragment = undefined;
 			switch (oAction) {
-			case "download":
-				oPath = oPath.slice(1);
-				var oModel = this.getView().getModel().oData;
-				var sModel = JSON.stringify(oModel);
-				File.save(sModel, oPath, "json", "application/json", undefined, undefined);
-				break;
 			case "upload":
 				oFragment = "uploadModelDialog";
+				break;
+			default:
+				break;
+			}
+			if (oFragment) {
 				if (!this._oDialog) {
-					this._oDialog = sap.ui.xmlfragment("NPCGen.NPCGen.fragment." + oFragment, this);
+					this._oDialog = sap.ui.xmlfragment(this.getView().getId(), "NPCGen.NPCGen.fragment." + oFragment, this);
 					this.getView().addDependent(this._oDialog);
 					this._oDialog.open();
 				} else {
 					this._oDialog.open();
 				}
-				break;
-			default:
-				break;
+			} else {
+				MessageToast.show("Фрагмент не определён");
 			}
-
 		},
 		onNew: function (oEvent, oMassivePath, oTemplateName) {
 			var oPath = oMassivePath;
@@ -112,10 +141,11 @@ sap.ui.define([
 		},
 
 		onDelete: function (oEvent, oMassivePath) {
-			if (!oEvent.getSource().getParent().getBindingContextPath)
+			if (!oEvent.getSource().getParent().getBindingContextPath) {
 				var oSourcePath = oEvent.getSource().getParent().getBindingContext().getPath();
-			else
+			} else {
 				oSourcePath = oEvent.getSource().getParent().getBindingContextPath();
+			}
 			var oSourceArray = oSourcePath.split("/");
 			var oDeleteIndex = oSourceArray[oSourceArray.length - 1];
 			var oModidiers = this.getView().getModel().getProperty(oMassivePath);
@@ -133,8 +163,9 @@ sap.ui.define([
 			}
 			var iRandomNumber = this.getRandomNumber.call(this, 0, iMaxNum);
 			for (i = 0; i < mObjects.length; i++) {
-				if (mObjects[i].startNum <= iRandomNumber && mObjects[i].endNum >= iRandomNumber)
+				if (mObjects[i].startNum <= iRandomNumber && mObjects[i].endNum >= iRandomNumber) {
 					return mObjects[i];
+				}
 			}
 			return undefined;
 		},
@@ -149,10 +180,11 @@ sap.ui.define([
 		onGenerateCharacter: function (oEvent) {
 			var oMassive = this.getOwnerComponent().getModel("characters").getProperty("/Characters");
 			var oNewLine = JSON.parse(JSON.stringify(this.getOwnerComponent().getModel("template").getProperty("/Character")));
-			if (!oEvent.getSource().getParent().getBindingContextPath)
+			if (!oEvent.getSource().getParent().getBindingContextPath) {
 				var oSourcePath = oEvent.getSource().getParent().getBindingContext().getPath();
-			else
+			} else {
 				oSourcePath = oEvent.getSource().getParent().getBindingContextPath();
+			}
 			var oTemplate = this.getOwnerComponent().getModel("templates").getProperty(oSourcePath);
 
 			oNewLine.Gender = this.getRandomObject.call(this, oTemplate.Gender).Name;
@@ -179,8 +211,9 @@ sap.ui.define([
 			oNewLine.Motive.Survival = this.getRandomNumber.call(this, 1, 10);
 			oNewLine.Motive.InventionExploration = this.getRandomNumber.call(this, 1, 10);
 			oNewLine.Wealth = this.getRandomNumber.call(this, 1, 10);
-			var oClass = Object.assign({}, this.getRandomObject.call(this, oTemplate.Class));
+			oNewLine.Lvl = this.getRandomNumber.call(this, oTemplate.Lvl.From, oTemplate.Lvl.To);
 
+			var oClass = Object.assign({}, this.getRandomObject.call(this, oTemplate.Class));
 			oNewLine.Class.Name = oClass.Name;
 			oNewLine.Class.Probability = oClass.Probability;
 			oNewLine.Class.Description = oClass.Description;

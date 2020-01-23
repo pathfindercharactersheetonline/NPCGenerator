@@ -14,9 +14,9 @@
 										press=".onDeleteAll.call($controller,$event, $controller.getView().getBindingContext().getPath())"/>
 									<ToolbarSpacer/>
 									<Button icon="sap-icon://download"
-										press=".onExtractorModel.call($controller,$event, $controller.getView().getBindingContext().getPath(), 'download')"/>
+										press=".onDownload.call($controller,$event, $controller.getView().getBindingContext().getPath())"/>
 									<Button icon="sap-icon://upload"
-										press=".onExtractorModel.call($controller,$event, $controller.getView().getBindingContext().getPath(), 'upload')"/>
+										press=".onOpenFragment.call($controller,$event, $controller.getView().getBindingContext().getPath(), 'upload')"/>
 								</Toolbar>
 							</headerToolbar>
 							<columns>
