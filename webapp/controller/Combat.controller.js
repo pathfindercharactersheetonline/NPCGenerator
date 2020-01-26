@@ -10,12 +10,12 @@ sap.ui.define([
 			var oModel = this.getOwnerComponent().getModel("templates");
 			this.getView().setModel(oModel);
 			var oRouter = UIComponent.getRouterFor(this);
-			oRouter.getRoute("Class").attachPatternMatched(this._onObjectMatched, this);
+			oRouter.getRoute("Combat").attachPatternMatched(this._onObjectMatched, this);
 		},
 
 		_onObjectMatched: function (oEvent) {
 			this.getView().bindElement({
-				path: "/Templates/" + oEvent.getParameter("arguments").TemplId + "/Class/" + oEvent.getParameter("arguments").Id
+				path: "/Templates/" + oEvent.getParameter("arguments").TemplId + "/Race/" + oEvent.getParameter("arguments").Id
 			});
 
 		}

@@ -24,6 +24,16 @@ sap.ui.define([
 				return undefined;
 			}
 		},
+		CombatFeet: function (oValue) {
+			switch (oValue) {
+				case null: 
+					return null;
+				case undefined:
+					return undefined;
+				default:
+					return oValue + " " + "ft.";
+			}
+		},
 		abilitiesMod: function (oValue) {
 			/*if (oValue != nill) {
 				var oPath = this.oView.mObjectBindingInfos.undefined.binding.getPath();

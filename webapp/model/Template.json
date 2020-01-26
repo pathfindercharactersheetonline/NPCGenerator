@@ -1365,25 +1365,32 @@
 		},
 		"Race": [{
 			"Name": "Dwarf",
-			"Probability": "1"
+			"Probability": "1",
+			"Combat":{"Feet":2,"Size":"Medium"}
 		}, {
 			"Name": "Halfling",
-			"Probability": "1"
+			"Probability": "1",
+			"Combat":{"Feet":2,"Size":"Medium"}
 		}, {
 			"Name": "Elf",
-			"Probability": "1"
+			"Probability": "1",
+			"Combat":{"Feet":2,"Size":"Medium"}
 		}, {
 			"Name": "Human",
-			"Probability": "1"
+			"Probability": "1",
+			"Combat":{"Feet":2,"Size":"Medium"}
 		}, {
 			"Name": "Gnome",
-			"Probability": "1"
+			"Probability": "1",
+			"Combat":{"Feet":2,"Size":"Medium"}
 		}, {
 			"Name": "Half-orc",
-			"Probability": "1"
+			"Probability": "1",
+			"Combat":{"Feet":2,"Size":"Medium"}
 		}, {
 			"Name": "Half-elf",
-			"Probability": "1"
+			"Probability": "1",
+			"Combat":{"Feet":2,"Size":"Medium"}
 		}],
 		"Gender": [{
 			"Name": "Male",
@@ -1829,6 +1836,7 @@
 		"Deity": "",
 		"Gender": "",
 		"Lvl": 1,
+		"Combat":{"Feet":0,"Size":"Medium"},
 		"Class": {
 			"Name": "",
 			"Description": "",

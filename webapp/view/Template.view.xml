@@ -167,7 +167,7 @@
 						<l:BlockLayoutRow>
 							<l:BlockLayoutCell width="1">
 								<ScrollContainer>
-									<Table items="{ path: 'Race'}" growing="true">
+									<Table items="{ path: 'Race'}" growing="true" itemPress=".onNavToItemTempl.call($controller, $event,'Combat')" >
 										<headerToolbar>
 											<Toolbar>
 												<Button icon="sap-icon://add" press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Race', '/NameProbability')"/>
@@ -184,7 +184,7 @@
 											<Column/>
 										</columns>
 										<items>
-											<ColumnListItem>
+											<ColumnListItem type="Active">
 												<cells>
 													<Input value="{Name}"/>
 												</cells>
@@ -293,7 +293,7 @@
 						<l:BlockLayoutRow>
 							<l:BlockLayoutCell width="1">
 								<ScrollContainer>
-									<Table items="{ path: 'Class'}" growing="true" itemPress=".onNavToItemClass.call($controller, $event, 'Class')">
+									<Table items="{ path: 'Class'}" growing="true"  itemPress=".onNavToItemTempl.call($controller, $event, 'Class')"  	>
 										<headerToolbar>
 											<Toolbar>
 												<Button icon="sap-icon://add" press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Class/', '/ClassProbabilityDescription')"/>

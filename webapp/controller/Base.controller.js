@@ -31,15 +31,15 @@ sap.ui.define([
 				Id: oId
 			});
 		},
-		onNavToItemClass: function (oEvent, sTarget) {
+		onNavToItemTempl: function (oEvent, sTarget) {
 			var oItemPath = oEvent.getParameter("listItem").getBindingContext().getPath();
 			var aPathSplit = oItemPath.split("/");
 			var oTemplId = aPathSplit[2];
-			var oClassId = aPathSplit[4];
-			if (oTemplId !== undefined && oClassId !== undefined) {
+			var oId = aPathSplit[4];
+			if (oTemplId !== undefined && oId !== undefined) {
 				UIComponent.getRouterFor(this).navTo(sTarget, {
 					TemplId: oTemplId,
-					ClassId: oClassId
+					Id: oId
 				});
 			}
 		},
@@ -82,7 +82,10 @@ sap.ui.define([
 					if (oFileData === oViewName) {
 						var oModel = this.controller.oView.getModel();
 						if (oData.Characters || oData.Templates) {
-							oModel.oData = oData;
+							//oModel.oData = oData;
+							for(var i = 0;i<oData[oFileData].length;i++){
+								oModel.oData[oFileData].push( oData[oFileData][i] );	
+							}
 							oModel.refresh();
 						} else {
 							oMsg = "Модель данных не инициализирована";
@@ -201,6 +204,15 @@ sap.ui.define([
 			}
 			oNewLine.Surname = this.getRandomObject.call(this, oTemplate.Surname).Name;
 			oNewLine.Race = this.getRandomObject.call(this, oTemplate.Race).Name;
+			
+			for(var i=0;i < oTemplate.Race.length;i++){
+				if(oTemplate.Race[i].Name === oNewLine.Race){
+					oNewLine.Combat.Size = oTemplate.Race[i].Combat.Size;
+					oNewLine.Combat.Feet = oTemplate.Race[i].Combat.Feet;
+					break;
+				}	
+			}
+			
 			oNewLine.Deity = this.getRandomObject.call(this, oTemplate.Deity).Name;
 			var sProfessionType = this.getRandomObject.call(this, oTemplate.ProfessionType).Name;
 			oNewLine.Profession = this.getRandomObject.call(this, oTemplate.Profession[sProfessionType]).Name;
