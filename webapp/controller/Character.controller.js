@@ -13,6 +13,9 @@ sap.ui.define([
 			var oRouter = UIComponent.getRouterFor(this);
 			oRouter.getRoute("Character").attachPatternMatched(this._onObjectMatched, this);
 		},
+		onHandleLoadClass: function(oEvent){
+			return;
+		},
 		_onObjectMatched: function (oEvent) {
 			this.getView().bindElement({
 				path: "/Characters/" + oEvent.getParameter("arguments").Id

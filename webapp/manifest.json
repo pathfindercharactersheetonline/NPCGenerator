@@ -74,6 +74,11 @@
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/Template.json",
 				"preload": false
+			},
+						"class": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/Class.json",
+				"preload": false
 			}
 		},
 		"resources": {

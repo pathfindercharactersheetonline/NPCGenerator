@@ -1,0 +1,27 @@
+{
+	"Class": [{
+			"Name": "Barbarian"
+		}, {
+			"Name": "Bard"
+		}, {
+			"Name": "Cleric"
+		}, {
+			"Name": "Druid"
+		}, {
+			"Name": "Fighter"
+		}, {
+			"Name": "Monk"
+		}, {
+			"Name": "Paladin"
+		}, {
+			"Name": "Ranger"
+		}, {
+			"Name": "Rogue"
+		}, {
+			"Name": "Sorcerer"
+		}, {
+			"Name": "Wizard"
+		}
+
+	]
+}

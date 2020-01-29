@@ -1,6 +1,9 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" controllerName="NPCGen.NPCGen.controller.Character">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	controllerName="NPCGen.NPCGen.controller.Character">
 	<Page>
-		<f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="4" columnsM="2" singleContainerFullSize="false" maxContainerCols="3">
+		<f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12"
+			adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="4" columnsM="2"
+			singleContainerFullSize="false" maxContainerCols="3">
 			<f:content>
 				<core:Title text="{Name}"/>
 				<Label text="Name"/>
@@ -35,26 +38,32 @@
 				<Label text="Gender"/>
 				<Input value="{Gender}"/>
 				<Label text="Class"/>
-				<Input value="{Class/Name}"/>
-				<!--items="{ path: '/Template/Class', sorter: { path: 'Name' } }">-->
-				<!--	<core:ListItem key="{Name}" text="{Name}" />-->
-				<!--</Select>-->
+				<!--<Input value="{Class/Name}"/>-->
+				<ComboBox  id="Class" items="{ path: 'class>/Class/' }" value="{Class/Name}" selectedKey="{Class/Name}">
+					<core:Item key="{class>Name}" text="{class>Name}"/>
+				</ComboBox>
 				<Label text="Lvl"/>
 				<Input value="{Lvl}"/>
 				<Label text="Label" width="100%" id="label23_1579547335326"/>
 				<core:Title text="Abilities"/>
 				<Label text="Dexterity"/>
-				<Input value="{path:'Class/Abilities/Dexterity', type:'sap.ui.model.type.Integer'}" type="Number" description="{path:'Class/Abilities/Dexterity', formatter: '.formatter.abilitiesMod'}"/>
+				<Input value="{path:'Class/Abilities/Dexterity', type:'sap.ui.model.type.Integer'}" type="Number"
+					description="{path:'Class/Abilities/Dexterity', formatter: '.formatter.abilitiesMod'}"/>
 				<Label text="Strength"/>
-				<Input value="{path:'Class/Abilities/Strength', type:'sap.ui.model.type.Integer'}" type="Number" description="{path:'Class/Abilities/Strength', formatter: '.formatter.abilitiesMod'}"/>
+				<Input value="{path:'Class/Abilities/Strength', type:'sap.ui.model.type.Integer'}" type="Number"
+					description="{path:'Class/Abilities/Strength', formatter: '.formatter.abilitiesMod'}"/>
 				<Label text="Constitution"/>
-				<Input value="{path:'Class/Abilities/Constitution', type:'sap.ui.model.type.Integer'}" type="Number" description="{path:'Class/Abilities/Constitution', formatter: '.formatter.abilitiesMod'}"/>
+				<Input value="{path:'Class/Abilities/Constitution', type:'sap.ui.model.type.Integer'}" type="Number"
+					description="{path:'Class/Abilities/Constitution', formatter: '.formatter.abilitiesMod'}"/>
 				<Label text="Intelligence"/>
-				<Input value="{path:'Class/Abilities/Intelligence', type:'sap.ui.model.type.Integer'}" type="Number" description="{path:'Class/Abilities/Intelligence', formatter: '.formatter.abilitiesMod'}"/>
+				<Input value="{path:'Class/Abilities/Intelligence', type:'sap.ui.model.type.Integer'}" type="Number"
+					description="{path:'Class/Abilities/Intelligence', formatter: '.formatter.abilitiesMod'}"/>
 				<Label text="Wisdom"/>
-				<Input value="{path:'Class/Abilities/Wisdom', type:'sap.ui.model.type.Integer'}" type="Number" description="{path:'Class/Abilities/Wisdom', formatter: '.formatter.abilitiesMod'}"/>
+				<Input value="{path:'Class/Abilities/Wisdom', type:'sap.ui.model.type.Integer'}" type="Number"
+					description="{path:'Class/Abilities/Wisdom', formatter: '.formatter.abilitiesMod'}"/>
 				<Label text="Charisma"/>
-				<Input value="{path:'Class/Abilities/Charisma', type:'sap.ui.model.type.Integer'}" type="Number" description="{path:'Class/Abilities/Charisma', formatter: '.formatter.abilitiesMod'}"/>
+				<Input value="{path:'Class/Abilities/Charisma', type:'sap.ui.model.type.Integer'}" type="Number"
+					description="{path:'Class/Abilities/Charisma', formatter: '.formatter.abilitiesMod'}"/>
 				<core:Title text="{i18n>CharCombat}"/>
 				<Label text="Size"/>
 				<Input value="{path:'Combat/Size'} "/>
