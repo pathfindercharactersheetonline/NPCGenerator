@@ -68,7 +68,8 @@
 				<Label text="Size"/>
 				<Input value="{path:'Combat/Size'} "/>
 				<Label text="Feet"/>
-				<Input value="{path:'Combat/Feet', formatter: '.formatter.CombatFeet'}"/>
+				<Input value="{path:'Combat/Feet'}" type="Number"
+					description="{path:'Combat/Feet', formatter: '.formatter.CombatFeet'}"/>
 				<!--"Race": "Human",
 				"Age": 30,
 				"SubmissiveLeader": 4,
