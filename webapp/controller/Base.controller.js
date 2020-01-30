@@ -23,7 +23,13 @@ sap.ui.define([
 				MessageToast.show(err.message);
 			}
 		},
-
+		isArry: function(oArray,oElem,oValue){
+			for(var i=0;i < oArray.length;i++ ){
+				if(oArray[i][oElem] === oValue){
+					return true;
+				}
+			}
+		},
 		onNavToItem: function (oEvent, sTarget) {
 			var oItemPath = oEvent.getParameter("listItem").getBindingContext().getPath();
 			var oId = oItemPath.slice(oItemPath.lastIndexOf("/") + "/".length, oItemPath.length);

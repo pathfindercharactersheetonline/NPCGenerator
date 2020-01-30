@@ -39,7 +39,7 @@
 				<Input value="{Gender}"/>
 				<Label text="Class"/>
 				<!--<Input value="{Class/Name}"/>-->
-				<ComboBox  id="Class" items="{ path: 'class>/Class/' }" value="{Class/Name}" selectedKey="{Class/Name}">
+				<ComboBox  id="Class" items="{ path: 'class>/Class/' }" value="{Class/Name}" selectedKey="{Class/Name}" change="handleChangeClass">
 					<core:Item key="{class>Name}" text="{class>Name}"/>
 				</ComboBox>
 				<Label text="Lvl"/>
@@ -89,7 +89,7 @@
 		<footer>
 			<Bar>
 				<contentLeft>
-					<Button icon="sap-icon://nav-back" press="onNavBack"/>
+					<Button id = "backCharacter"  icon="sap-icon://nav-back" press="onNavBack"/>
 				</contentLeft>
 			</Bar>
 		</footer>

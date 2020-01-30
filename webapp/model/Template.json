@@ -14,27 +14,27 @@
 		"Probability": "1",
 		"Abilities": {
 			"Strength": {
-				"From": "0",
+				"From": "10",
 				"To": "20"
 			},
 			"Dexterity": {
-				"From": "0",
+				"From": "10",
 				"To": "20"
 			},
 			"Constitution": {
-				"From": "0",
+				"From": "10",
 				"To": "20"
 			},
 			"Intelligence": {
-				"From": "0",
+				"From": "10",
 				"To": "20"
 			},
 			"Wisdom": {
-				"From": "0",
+				"From": "10",
 				"To": "20"
 			},
 			"Charisma": {
-				"From": "0",
+				"From": "10",
 				"To": "20"
 			}
 		}
@@ -1545,7 +1545,7 @@
             }
         }
     }, {
-        "Name": "Cleric ",
+        "Name": "Cleric",
         "Description": "",
         "Probability": "1",
         "Abilities": {
@@ -1575,7 +1575,7 @@
             }
         }
     }, {
-        "Name": "Druid ",
+        "Name": "Druid",
         "Description": "",
         "Probability": "1",
         "Abilities": {
@@ -1605,7 +1605,7 @@
             }
         }
     }, {
-        "Name": "Fighter ",
+        "Name": "Fighter",
         "Description": "",
         "Probability": "1",
         "Abilities": {
@@ -1635,7 +1635,7 @@
             }
         }
     }, {
-        "Name": "Monk ",
+        "Name": "Monk",
         "Description": "",
         "Probability": "1",
         "Abilities": {
@@ -1725,7 +1725,7 @@
             }
         }
     }, {
-        "Name": "Rogue ",
+        "Name": "Rogue",
         "Description": "",
         "Probability": "1",
         "Abilities": {
@@ -1755,7 +1755,7 @@
             }
         }
     }, {
-        "Name": "Sorcerer ",
+        "Name": "Sorcerer",
         "Description": "",
         "Probability": "1",
         "Abilities": {
