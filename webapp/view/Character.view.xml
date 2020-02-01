@@ -67,7 +67,7 @@
 				<core:Title text="{i18n>CharCombat}"/>
 				<Label text="Size"/>
 				<Input value="{path:'Combat/Size'} "/>
-				<Label text="Feet"/>
+				<Label text="Speed"/>
 				<Input value="{path:'Combat/Feet'}" type="Number"
 					description="{path:'Combat/Feet', formatter: '.formatter.CombatFeet'}"/>
 				<!--"Race": "Human",
