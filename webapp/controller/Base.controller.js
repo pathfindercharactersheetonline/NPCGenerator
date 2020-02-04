@@ -77,7 +77,7 @@ sap.ui.define([
 				return;
 			}
 
-			var reader = new FileReader();
+			var reader = new FileReader(); 
 			reader.controller = this;
 			reader.onload = function (oLoad) {
 				var oMsg = undefined;
