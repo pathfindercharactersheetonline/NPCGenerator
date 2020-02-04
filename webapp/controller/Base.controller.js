@@ -23,9 +23,9 @@ sap.ui.define([
 				MessageToast.show(err.message);
 			}
 		},
-		isArry: function(oArray,oElem,oValue){
-			for(var i=0;i < oArray.length;i++ ){
-				if(oArray[i][oElem] === oValue){
+		isArry: function (oArray, oElem, oValue) {
+			for (var i = 0; i < oArray.length; i++) {
+				if (oArray[i][oElem] === oValue) {
 					return true;
 				}
 			}
@@ -79,19 +79,20 @@ sap.ui.define([
 
 			var reader = new FileReader();
 			reader.controller = this;
-			reader.onload = function (oEvent) {
+			reader.onload = function (oLoad) {
 				var oMsg = undefined;
 				var oViewName = this.controller.getView().getId().slice(19);
-				var oData = JSON.parse(oEvent.target.result);
+				var oData = JSON.parse(oLoad.target.result);
 				if (oData) {
 					var oFileData = Object.keys(oData).toLocaleString();
 					if (oFileData === oViewName) {
 						var oModel = this.controller.oView.getModel();
 						if (oData.Characters || oData.Templates) {
-							//oModel.oData = oData;
-							for(var i = 0;i<oData[oFileData].length;i++){
-								oModel.oData[oFileData].push( oData[oFileData][i] );	
+							var oModelData = oModel.getProperty("/" + oViewName );
+							for (var i = 0; i < oData[oFileData].length; i++) {
+								oModelData.push(oData[oFileData][i]);
 							}
+							oModel.setProperty("/" + oViewName,oModelData);
 							oModel.refresh();
 						} else {
 							oMsg = "Модель данных не инициализирована";
@@ -210,15 +211,15 @@ sap.ui.define([
 			}
 			oNewLine.Surname = this.getRandomObject.call(this, oTemplate.Surname).Name;
 			oNewLine.Race = this.getRandomObject.call(this, oTemplate.Race).Name;
-			
-			for(var i=0;i < oTemplate.Race.length;i++){
-				if(oTemplate.Race[i].Name === oNewLine.Race){
+
+			for (var i = 0; i < oTemplate.Race.length; i++) {
+				if (oTemplate.Race[i].Name === oNewLine.Race) {
 					oNewLine.Combat.Size = oTemplate.Race[i].Combat.Size;
 					oNewLine.Combat.Feet = oTemplate.Race[i].Combat.Feet;
 					break;
-				}	
+				}
 			}
-			
+
 			oNewLine.Deity = this.getRandomObject.call(this, oTemplate.Deity).Name;
 			var sProfessionType = this.getRandomObject.call(this, oTemplate.ProfessionType).Name;
 			oNewLine.Profession = this.getRandomObject.call(this, oTemplate.Profession[sProfessionType]).Name;
