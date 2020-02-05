@@ -111,9 +111,9 @@ sap.ui.define([
 		},
 		onDownload: function (oEvent, oPath) {
 			oPath = oPath.slice(1);
-			var oModel = this.getView().getModel().oData;
-			var sModel = JSON.stringify(oModel);
-			File.save(sModel, oPath, "json", "application/json", undefined, true);
+			var oData = this.getView().getModel().getProperty("/");
+			var sData = JSON.stringify(oData);
+			File.save(sData, oPath, "json", "application/json", undefined, true);
 		},
 		onOpenFragment: function (oEvent, oPath, oAction) {
 			var oFragment = undefined;
