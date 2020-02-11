@@ -297,11 +297,18 @@ sap.ui.define([
 				Math.floor(formatter.abilitiesMod(oNewLine.Class.Abilities["Dexterity"]) * 0.5) //
 				+ ""; // 0,5*STR/DEX + DMG(weapon)
 
-			oNewLine.CMB = ""; // Base Attack Bonus + Str + SizeBonus
-			oNewLine.CMD = ""; // 10 + Base Attack Bonus + Str + Dex + SizeBonus
-			oNewLine.AC = ""; // 10 + Dex + SizeBonus
-			oNewLine.TouchAC = ""; // 10 + Dex + SizeBonus
-			oNewLine.FlatFootedAC = ""; // SizeBonus
+			oNewLine.Combat.SizeBonus = 0;
+			if (oNewLine.Combat.Size === "Small") oNewLine.Combat.SizeBonus = 1;
+
+			oNewLine.CMB = (formatter.abilitiesMod(oNewLine.Class.Abilities["Strength"]) //
+				+ oNewLine.BAB - oNewLine.Combat.SizeBonus) + ""; // Base Attack Bonus + Str - SizeBonus
+			oNewLine.CMD = (10 + oNewLine.BAB + //
+				formatter.abilitiesMod(oNewLine.Class.Abilities["Strength"]) + //
+				formatter.abilitiesMod(oNewLine.Class.Abilities["Dexterity"]) - //
+				oNewLine.Combat.SizeBonus) + ""; // 10 + Base Attack Bonus + Str + Dex - SizeBonus
+			oNewLine.TouchAC = oNewLine.AC = (10 + formatter.abilitiesMod(oNewLine.Class.Abilities["Dexterity"]) + //
+				oNewLine.Combat.SizeBonus) + ""; // 10 + Dex + SizeBonus
+			oNewLine.FlatFootedAC = oNewLine.Combat.SizeBonus + ""; // SizeBonus
 
 			oMassive.push(oNewLine);
 			this.getOwnerComponent().getModel("characters").refresh();
