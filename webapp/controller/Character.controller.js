@@ -14,21 +14,21 @@ sap.ui.define([
 			var oRouter = UIComponent.getRouterFor(this);
 			oRouter.getRoute("Character").attachPatternMatched(this._onObjectMatched, this);
 		},
-		fillClassModel: function (oEvent) {
-			var oClass = oEvent.getOwnerComponent().getModel("class").getData();
+		fillClassModel: function (oController) {
+			var oClass = oController.getOwnerComponent().getModel("class").getData();
 			var oTemplates = this.getOwnerComponent().getModel("templates").getData();
 			for (var i = 0; i < oTemplates.Templates.length; i++) {
 				var sClass = undefined;
 				for (var j = 0; j < oTemplates.Templates[i].Class.length; j++) {
-					var sClass = oTemplates.Templates[i].Class[j].Name;
-					if (!oEvent.isArry(oClass.Class, "Name", sClass)) {
+					sClass = oTemplates.Templates[i].Class[j].Name;
+					if (!oController.isArray(oClass.Class, "Name", sClass)) {
 						oClass.Class.push({
 							"Name": sClass
 						});
 					}
 				}
 			}
-			oEvent.getOwnerComponent().getModel("class").refresh();
+			oController.getOwnerComponent().getModel("class").refresh();
 		},
 		handleChangeClass: function (oEvent) {
 			var oValidatedComboBox = oEvent.getSource(),
@@ -36,7 +36,7 @@ sap.ui.define([
 				sValue = oValidatedComboBox.getValue();
 			var oClass = this.getOwnerComponent().getModel("class").getData();
 
-			if ((sSelectedKey && sValue) || this.isArry(oClass.Class, "Name", sValue)) {
+			if ((sSelectedKey && sValue) || this.isArray(oClass.Class, "Name", sValue)) {
 				oValidatedComboBox.setValueState("None");
 				this.byId("backCharacter").setEnabled(true);
 			} else {

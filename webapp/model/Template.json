@@ -40,7 +40,7 @@
 		}
 	},
 	"Template": {
-		"TemplateName": "",
+		"TemplateName": "Base Template",
 		"Lvl": {
 			"From": 1,
 			"To": 20
@@ -1366,31 +1366,52 @@
 		"Race": [{
 			"Name": "Dwarf",
 			"Probability": "1",
-			"Combat":{"Feet":2,"Size":"Medium"}
+			"Combat": {
+				"Feet": 10,
+				"Size": "Medium"
+			}
 		}, {
 			"Name": "Halfling",
 			"Probability": "1",
-			"Combat":{"Feet":2,"Size":"Medium"}
+			"Combat": {
+				"Feet": 10,
+				"Size": "Small"
+			}
 		}, {
 			"Name": "Elf",
 			"Probability": "1",
-			"Combat":{"Feet":2,"Size":"Medium"}
+			"Combat": {
+				"Feet": 10,
+				"Size": "Medium"
+			}
 		}, {
 			"Name": "Human",
 			"Probability": "1",
-			"Combat":{"Feet":2,"Size":"Medium"}
+			"Combat": {
+				"Feet": 10,
+				"Size": "Medium"
+			}
 		}, {
 			"Name": "Gnome",
 			"Probability": "1",
-			"Combat":{"Feet":2,"Size":"Medium"}
+			"Combat": {
+				"Feet": 10,
+				"Size": "Small"
+			}
 		}, {
 			"Name": "Half-orc",
 			"Probability": "1",
-			"Combat":{"Feet":2,"Size":"Medium"}
+			"Combat": {
+				"Feet": 10,
+				"Size": "Medium"
+			}
 		}, {
 			"Name": "Half-elf",
 			"Probability": "1",
-			"Combat":{"Feet":2,"Size":"Medium"}
+			"Combat": {
+				"Feet": 10,
+				"Size": "Medium"
+			}
 		}],
 		"Gender": [{
 			"Name": "Male",
@@ -1485,338 +1506,391 @@
 			"Probability": "1"
 		}],
 		"Class": [{
-        "Name": "Barbarian",
-        "Description": "",
-        "Probability": "1",
-        "Abilities": {
-            "Strength": {
-                "From": "10",
-                "To": "20"
-            },
-            "Dexterity": {
-                "From": "10",
-                "To": "20"
-            },
-            "Constitution": {
-                "From": "10",
-                "To": "20"
-            },
-            "Intelligence": {
-                "From": "10",
-                "To": "20"
-            },
-            "Wisdom": {
-                "From": "10",
-                "To": "20"
-            },
-            "Charisma": {
-                "From": "10",
-                "To": "20"
-            }
-        }
-    }, {
-        "Name": "Bard",
-        "Description": "",
-        "Probability": "1",
-        "Abilities": {
-            "Strength": {
-                "From": "10",
-                "To": "20"
-            },
-            "Dexterity": {
-                "From": "10",
-                "To": "20"
-            },
-            "Constitution": {
-                "From": "10",
-                "To": "20"
-            },
-            "Intelligence": {
-                "From": "10",
-                "To": "20"
-            },
-            "Wisdom": {
-                "From": "10",
-                "To": "20"
-            },
-            "Charisma": {
-                "From": "10",
-                "To": "20"
-            }
-        }
-    }, {
-        "Name": "Cleric",
-        "Description": "",
-        "Probability": "1",
-        "Abilities": {
-            "Strength": {
-                "From": "10",
-                "To": "20"
-            },
-            "Dexterity": {
-                "From": "10",
-                "To": "20"
-            },
-            "Constitution": {
-                "From": "10",
-                "To": "20"
-            },
-            "Intelligence": {
-                "From": "10",
-                "To": "20"
-            },
-            "Wisdom": {
-                "From": "10",
-                "To": "20"
-            },
-            "Charisma": {
-                "From": "10",
-                "To": "20"
-            }
-        }
-    }, {
-        "Name": "Druid",
-        "Description": "",
-        "Probability": "1",
-        "Abilities": {
-            "Strength": {
-                "From": "10",
-                "To": "20"
-            },
-            "Dexterity": {
-                "From": "10",
-                "To": "20"
-            },
-            "Constitution": {
-                "From": "10",
-                "To": "20"
-            },
-            "Intelligence": {
-                "From": "10",
-                "To": "20"
-            },
-            "Wisdom": {
-                "From": "10",
-                "To": "20"
-            },
-            "Charisma": {
-                "From": "10",
-                "To": "20"
-            }
-        }
-    }, {
-        "Name": "Fighter",
-        "Description": "",
-        "Probability": "1",
-        "Abilities": {
-            "Strength": {
-                "From": "10",
-                "To": "20"
-            },
-            "Dexterity": {
-                "From": "10",
-                "To": "20"
-            },
-            "Constitution": {
-                "From": "10",
-                "To": "20"
-            },
-            "Intelligence": {
-                "From": "10",
-                "To": "20"
-            },
-            "Wisdom": {
-                "From": "10",
-                "To": "20"
-            },
-            "Charisma": {
-                "From": "10",
-                "To": "20"
-            }
-        }
-    }, {
-        "Name": "Monk",
-        "Description": "",
-        "Probability": "1",
-        "Abilities": {
-            "Strength": {
-                "From": "10",
-                "To": "20"
-            },
-            "Dexterity": {
-                "From": "10",
-                "To": "20"
-            },
-            "Constitution": {
-                "From": "10",
-                "To": "20"
-            },
-            "Intelligence": {
-                "From": "10",
-                "To": "20"
-            },
-            "Wisdom": {
-                "From": "10",
-                "To": "20"
-            },
-            "Charisma": {
-                "From": "10",
-                "To": "20"
-            }
-        }
-    }, {
-        "Name": "Paladin",
-        "Description": "",
-        "Probability": "1",
-        "Abilities": {
-            "Strength": {
-                "From": "10",
-                "To": "20"
-            },
-            "Dexterity": {
-                "From": "10",
-                "To": "20"
-            },
-            "Constitution": {
-                "From": "10",
-                "To": "20"
-            },
-            "Intelligence": {
-                "From": "10",
-                "To": "20"
-            },
-            "Wisdom": {
-                "From": "10",
-                "To": "20"
-            },
-            "Charisma": {
-                "From": "10",
-                "To": "20"
-            }
-        }
-    }, {
-        "Name": "Ranger",
-        "Description": "",
-        "Probability": "1",
-        "Abilities": {
-            "Strength": {
-                "From": "10",
-                "To": "20"
-            },
-            "Dexterity": {
-                "From": "10",
-                "To": "20"
-            },
-            "Constitution": {
-                "From": "10",
-                "To": "20"
-            },
-            "Intelligence": {
-                "From": "10",
-                "To": "20"
-            },
-            "Wisdom": {
-                "From": "10",
-                "To": "20"
-            },
-            "Charisma": {
-                "From": "10",
-                "To": "20"
-            }
-        }
-    }, {
-        "Name": "Rogue",
-        "Description": "",
-        "Probability": "1",
-        "Abilities": {
-            "Strength": {
-                "From": "10",
-                "To": "20"
-            },
-            "Dexterity": {
-                "From": "10",
-                "To": "20"
-            },
-            "Constitution": {
-                "From": "10",
-                "To": "20"
-            },
-            "Intelligence": {
-                "From": "10",
-                "To": "20"
-            },
-            "Wisdom": {
-                "From": "10",
-                "To": "20"
-            },
-            "Charisma": {
-                "From": "10",
-                "To": "20"
-            }
-        }
-    }, {
-        "Name": "Sorcerer",
-        "Description": "",
-        "Probability": "1",
-        "Abilities": {
-            "Strength": {
-                "From": "10",
-                "To": "20"
-            },
-            "Dexterity": {
-                "From": "10",
-                "To": "20"
-            },
-            "Constitution": {
-                "From": "10",
-                "To": "20"
-            },
-            "Intelligence": {
-                "From": "10",
-                "To": "20"
-            },
-            "Wisdom": {
-                "From": "10",
-                "To": "20"
-            },
-            "Charisma": {
-                "From": "10",
-                "To": "20"
-            }
-        }
-    }, {
-        "Name": "Wizard",
-        "Description": "",
-        "Probability": "1",
-        "Abilities": {
-            "Strength": {
-                "From": "10",
-                "To": "20"
-            },
-            "Dexterity": {
-                "From": "10",
-                "To": "20"
-            },
-            "Constitution": {
-                "From": "10",
-                "To": "20"
-            },
-            "Intelligence": {
-                "From": "10",
-                "To": "20"
-            },
-            "Wisdom": {
-                "From": "10",
-                "To": "20"
-            },
-            "Charisma": {
-                "From": "10",
-                "To": "20"
-            }
-        }
-    }
-]
-
+			"Name": "Barbarian",
+			"HD": 12,
+			"FortForm": "2",
+			"RefForm": "1",
+			"WillForm": "1",
+			"BABForm": "3",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
+			}
+		}, {
+			"Name": "Bard",
+			"HD": 8,
+			"FortForm": "1",
+			"RefForm": "2",
+			"WillForm": "2",
+			"BABForm": "2",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
+			}
+		}, {
+			"Name": "Cleric",
+			"HD": 8,
+			"FortForm": "2",
+			"RefForm": "1",
+			"WillForm": "2",
+			"BABForm": "2",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
+			}
+		}, {
+			"Name": "Druid",
+			"HD": 8,
+			"FortForm": "2",
+			"RefForm": "1",
+			"WillForm": "2",
+			"BABForm": "2",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
+			}
+		}, {
+			"Name": "Fighter",
+			"HD": 10,
+			"FortForm": "2",
+			"RefForm": "1",
+			"WillForm": "1",
+			"BABForm": "3",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
+			}
+		}, {
+			"Name": "Monk",
+			"HD": 10,
+			"FortForm": "2",
+			"RefForm": "2",
+			"WillForm": "1",
+			"BABForm": "3",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
+			}
+		}, {
+			"Name": "Paladin",
+			"HD": 10,
+			"FortForm": "2",
+			"RefForm": "1",
+			"WillForm": "2",
+			"BABForm": "3",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
+			}
+		}, {
+			"Name": "Ranger",
+			"HD": 10,
+			"FortForm": "2",
+			"RefForm": "2",
+			"WillForm": "1",
+			"BABForm": "3",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
+			}
+		}, {
+			"Name": "Rogue",
+			"HD": 8,
+			"FortForm": "1",
+			"RefForm": "2",
+			"WillForm": "1",
+			"BABForm": "2",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
+			}
+		}, {
+			"Name": "Sorcerer",
+			"HD": 6,
+			"FortForm": "1",
+			"RefForm": "1",
+			"WillForm": "2",
+			"BABForm": "1",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
+			}
+		}, {
+			"Name": "Wizard",
+			"HD": 6,
+			"FortForm": "1",
+			"RefForm": "1",
+			"WillForm": "2",
+			"BABForm": "1",
+			"Description": "",
+			"Probability": "1",
+			"Abilities": {
+				"Strength": {
+					"From": "10",
+					"To": "20"
+				},
+				"Dexterity": {
+					"From": "10",
+					"To": "20"
+				},
+				"Constitution": {
+					"From": "10",
+					"To": "20"
+				},
+				"Intelligence": {
+					"From": "10",
+					"To": "20"
+				},
+				"Wisdom": {
+					"From": "10",
+					"To": "20"
+				},
+				"Charisma": {
+					"From": "10",
+					"To": "20"
+				}
+			}
+		}]
 	},
 	"Character": {
 		"Name": "",
@@ -1836,7 +1910,11 @@
 		"Deity": "",
 		"Gender": "",
 		"Lvl": 1,
-		"Combat":{"Feet":0,"Size":"Medium"},
+		"Combat": {
+			"Feet": 0,
+			"Size": "Medium",
+			"SizeBonus": 0
+		},
 		"Class": {
 			"Name": "",
 			"Description": "",
@@ -1849,6 +1927,26 @@
 				"Wisdom": "0",
 				"Charisma": "0"
 			}
-		}
+		},
+		"Initiative": "0",
+		"Health": "0",
+		"Fortitude": "0",
+		"Reflex": "0",
+		"Will": "0",
+		"AttackSTR": "0",
+		"AttackDEX": "0",
+		"DamageSTR1H": "0",
+		"DamageDEX1H": "0",
+		"DamageSTR2H": "0",
+		"DamageDEX2H": "0",
+		"DamageSTRoffH": "0",
+		"DamageDEXoffH": "0",
+		"BAB": 0,
+		"CMB": "0",
+		"CMD": "0",
+		"AC": "0",
+		"TouchAC": "0",
+		"FlatFootedAC": "0",
+		"Details": ""
 	}
 }

@@ -1335,7 +1335,7 @@
 			"Probability": "1",
 			"Combat": {
 				"Feet": 10,
-				"Size": "Medium"
+				"Size": "Small"
 			}
 		}, {
 			"Name": "Elf",
@@ -1356,7 +1356,7 @@
 			"Probability": "1",
 			"Combat": {
 				"Feet": 10,
-				"Size": "Medium"
+				"Size": "Small"
 			}
 		}, {
 			"Name": "Half-orc",
@@ -1467,6 +1467,11 @@
 		}],
 		"Class": [{
 			"Name": "Barbarian",
+			"HD": 12,
+			"FortForm": "2",
+			"RefForm": "1",
+			"WillForm": "1",
+			"BABForm": "3",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
@@ -1497,6 +1502,11 @@
 			}
 		}, {
 			"Name": "Bard",
+			"HD": 8,
+			"FortForm": "1",
+			"RefForm": "2",
+			"WillForm": "2",
+			"BABForm": "2",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
@@ -1527,6 +1537,11 @@
 			}
 		}, {
 			"Name": "Cleric",
+			"HD": 8,
+			"FortForm": "2",
+			"RefForm": "1",
+			"WillForm": "2",
+			"BABForm": "2",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
@@ -1557,6 +1572,11 @@
 			}
 		}, {
 			"Name": "Druid",
+			"HD": 8,
+			"FortForm": "2",
+			"RefForm": "1",
+			"WillForm": "2",
+			"BABForm": "2",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
@@ -1587,6 +1607,11 @@
 			}
 		}, {
 			"Name": "Fighter",
+			"HD": 10,
+			"FortForm": "2",
+			"RefForm": "1",
+			"WillForm": "1",
+			"BABForm": "3",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
@@ -1617,6 +1642,11 @@
 			}
 		}, {
 			"Name": "Monk",
+			"HD": 10,
+			"FortForm": "2",
+			"RefForm": "2",
+			"WillForm": "1",
+			"BABForm": "3",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
@@ -1647,6 +1677,11 @@
 			}
 		}, {
 			"Name": "Paladin",
+			"HD": 10,
+			"FortForm": "2",
+			"RefForm": "1",
+			"WillForm": "2",
+			"BABForm": "3",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
@@ -1677,6 +1712,11 @@
 			}
 		}, {
 			"Name": "Ranger",
+			"HD": 10,
+			"FortForm": "2",
+			"RefForm": "2",
+			"WillForm": "1",
+			"BABForm": "3",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
@@ -1707,6 +1747,11 @@
 			}
 		}, {
 			"Name": "Rogue",
+			"HD": 8,
+			"FortForm": "1",
+			"RefForm": "2",
+			"WillForm": "1",
+			"BABForm": "2",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
@@ -1737,6 +1782,11 @@
 			}
 		}, {
 			"Name": "Sorcerer",
+			"HD": 6,
+			"FortForm": "1",
+			"RefForm": "1",
+			"WillForm": "2",
+			"BABForm": "1",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {
@@ -1767,6 +1817,11 @@
 			}
 		}, {
 			"Name": "Wizard",
+			"HD": 6,
+			"FortForm": "1",
+			"RefForm": "1",
+			"WillForm": "2",
+			"BABForm": "1",
 			"Description": "",
 			"Probability": "1",
 			"Abilities": {

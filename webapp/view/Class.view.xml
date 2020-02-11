@@ -1,9 +1,11 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" controllerName="NPCGen.NPCGen.controller.Class">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	controllerName="NPCGen.NPCGen.controller.Class">
 	<Page>
-		<f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" 
-		labelSpanL="4" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" 
-		emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="2" columnsM="2" singleContainerFullSize="false" tooltip="{Name} {Description}" title="{Name} {Description}">
+		<f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12"
+			adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="2" columnsM="2"
+			singleContainerFullSize="false" tooltip="{Name}" title="{Name}">
 			<f:content>
+				<core:Title text="Атрибуты"/>
 				<Label text="Сила"/>
 				<Input value="{path:'Abilities/Strength/From', type:'sap.ui.model.type.Integer'}" type="Number"/>
 				<Input value="{path:'Abilities/Strength/To', type:'sap.ui.model.type.Integer'}" type="Number" textAlign="Left"/>
@@ -22,6 +24,41 @@
 				<Label text="Харизма"/>
 				<Input value="{path:'Abilities/Charisma/From', type:'sap.ui.model.type.Integer'}" type="Number"/>
 				<Input value="{path:'Abilities/Charisma/To', type:'sap.ui.model.type.Integer'}" type="Number" textAlign="Left"/>
+				<core:Title text="Параметры"/>
+				<Label text="КЗ"/>
+				<Input value="{path:'HD', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<Label text="Прогрессия БМА"/>
+				<Select selectedKey="{BABForm}">
+					<items>
+						<core:Item key="1" text="0,5 Уровня"></core:Item>
+						<core:Item key="2" text="0,75 Уровня"></core:Item>
+						<core:Item key="3" text="Уровень"></core:Item>
+					</items>
+				</Select>
+				<Label text="Прогрессия FORT"/>
+				<Select selectedKey="{FortForm}">
+					<items>
+						<core:Item key="1" text="0-6"></core:Item>
+						<core:Item key="2" text="2-12"></core:Item>
+					</items>
+				</Select>
+				<Label text="Прогрессия REF"/>
+				<Select selectedKey="{RefForm}">
+					<items>
+						<core:Item key="1" text="0-6"></core:Item>
+						<core:Item key="2" text="2-12"></core:Item>
+					</items>
+				</Select>
+				<Label text="Прогрессия WILL"/>
+				<Select selectedKey="{WillForm}">
+					<items>
+						<core:Item key="1" text="0-6"></core:Item>
+						<core:Item key="2" text="2-12"></core:Item>
+					</items>
+				</Select>
+				<core:Title text="Описание"/>
+				<Label text="Описание"/>
+				<TextArea value="{Description}" growing="true" rows="4" width="100%"/>
 			</f:content>
 		</f:SimpleForm>
 		<footer>

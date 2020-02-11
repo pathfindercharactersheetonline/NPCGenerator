@@ -19,7 +19,8 @@
 		"Lvl": 1,
 		"Combat": {
 			"Feet": 10,
-			"Size": "Medium"
+			"Size": "Medium",
+			"SizeBonus": 0
 		},
 		"Class": {
 			"Name": "Bard",
@@ -29,8 +30,28 @@
 				"Constitution": "15",
 				"Intelligence": "21",
 				"Wisdom": "11",
-				"Charisma": "90"
+				"Charisma": "15"
 			}
-		}
+		},
+		"Initiative": "2",
+		"Health": "30",
+		"Fortitude": "2",
+		"Reflex": "2",
+		"Will": "2",
+		"AttackSTR": "10",
+		"AttackDEX": "10",
+		"DamageSTR1H": "10",
+		"DamageDEX1H": "10",
+		"DamageSTR2H": "10",
+		"DamageDEX2H": "10",
+		"DamageSTRoffH": "10",
+		"DamageDEXoffH": "10",
+		"BAB": 10,
+		"CMB": "10",
+		"CMD": "10",
+		"AC": "10",
+		"TouchAC": "10",
+		"FlatFootedAC": "10",
+		"Details": ""
 	}]
 }

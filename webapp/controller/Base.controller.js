@@ -14,7 +14,7 @@ sap.ui.define([
 
 		formatter: formatter,
 
-		onInit: function () {}, 
+		onInit: function () {},
 
 		onNavTo: function (oEvent, sTarget) {
 			try {
@@ -23,12 +23,13 @@ sap.ui.define([
 				MessageToast.show(err.message);
 			}
 		},
-		isArry: function (oArray, oElem, oValue) {
+		isArray: function (oArray, oElem, oValue) {
 			for (var i = 0; i < oArray.length; i++) {
 				if (oArray[i][oElem] === oValue) {
 					return true;
 				}
 			}
+			return false;
 		},
 		onNavToItem: function (oEvent, sTarget) {
 			var oItemPath = oEvent.getParameter("listItem").getBindingContext().getPath();
@@ -75,8 +76,8 @@ sap.ui.define([
 			if (!oFile) {
 				MessageToast.show("Файл не определён");
 				return;
-			}  //
-			var reader = new FileReader(); 
+			} //
+			var reader = new FileReader();
 			reader.controller = this;
 			reader.onload = function (oLoad) {
 				var oMsg = undefined;
@@ -87,11 +88,11 @@ sap.ui.define([
 					if (oFileData === oViewName) {
 						var oModel = this.controller.oView.getModel();
 						if (oData.Characters || oData.Templates) {
-							var oModelData = oModel.getProperty("/" + oViewName );
+							var oModelData = oModel.getProperty("/" + oViewName);
 							for (var i = 0; i < oData[oFileData].length; i++) {
 								oModelData.push(oData[oFileData][i]);
 							}
-							oModel.setProperty("/" + oViewName,oModelData);
+							oModel.setProperty("/" + oViewName, oModelData);
 							oModel.refresh();
 						} else {
 							oMsg = "Модель данных не инициализирована";
@@ -237,10 +238,70 @@ sap.ui.define([
 			oNewLine.Class.Probability = oClass.Probability;
 			oNewLine.Class.Description = oClass.Description;
 			var oAbilities = Object.keys(oNewLine.Class.Abilities);
-			for (var i = 0; i < oAbilities.length; i++) {
+			for (i = 0; i < oAbilities.length; i++) {
 				oNewLine.Class.Abilities[oAbilities[i]] = this.getRandomNumber.call(this, parseInt(oClass.Abilities[oAbilities[i]].From),
 					parseInt(oClass.Abilities[oAbilities[i]].To));
 			}
+
+			// погнали ебошить статы. Надо посчитать и записать их стрингой чтобы можно было подкрутить
+			oNewLine.Initiative = formatter.abilitiesMod(oNewLine.Class.Abilities["Dexterity"]) + ""; // Init = DexMod
+			oNewLine.Health = 0;
+			for (i = 0; i < oNewLine.Lvl; i++) {
+				oNewLine.Health += formatter.abilitiesMod(oNewLine.Class.Abilities["Constitution"]) * 1 + //
+					this.getRandomNumber.call(this, 1, oClass.HD * 1) * 1;
+			}
+			oNewLine.Health += ""; // hp = sum(class HD, level) + CON*oLevel
+
+			oNewLine.Fortitude = formatter.abilitiesMod(oNewLine.Class.Abilities["Constitution"]) * 1;
+			if (oClass.FortForm === "1") oNewLine.Fortitude += Math.floor(oNewLine.Lvl / 3);
+			else if (oClass.FortForm === "2") oNewLine.Fortitude += Math.floor(2 + oNewLine.Lvl / 2);
+			oNewLine.Fortitude += ""; // Con + Fort(class) или floor(classLVL/3) или floor(2 + classLVL/2), значение заполнить при генерации персонажа
+
+			oNewLine.Reflex = formatter.abilitiesMod(oNewLine.Class.Abilities["Dexterity"]) * 1;
+			if (oClass.RefForm === "1") oNewLine.Reflex += Math.floor(oNewLine.Lvl / 3);
+			else if (oClass.RefForm === "2") oNewLine.Reflex += Math.floor(2 + oNewLine.Lvl / 2);
+			oNewLine.Reflex += ""; // Dex + Ref(class) или floor(classLVL/3) или floor(2 + classLVL/2), значение заполнить при генерации персонажа
+
+			oNewLine.Will = formatter.abilitiesMod(oNewLine.Class.Abilities["Wisdom"]) * 1;
+			if (oClass.WillForm === "1") oNewLine.Will += Math.floor(oNewLine.Lvl / 3);
+			else if (oClass.WillForm === "2") oNewLine.Will += Math.floor(2 + oNewLine.Lvl / 2);
+			oNewLine.Will += ""; // Wis + Will(class) или floor(classLVL/3) или floor(2 + classLVL/2), значение заполнить при генерации персонажа
+
+			oNewLine.BAB = 0; // От уровня по настраиваемой формуле 0,5 или 1 или 0,75 от ур-ня
+			if (oClass.BABForm === "1") oNewLine.BAB = Math.floor(oNewLine.Lvl * 0.5);
+			else if (oClass.BABForm === "2") oNewLine.BAB = Math.floor(oNewLine.Lvl * 0.75);
+			else if (oClass.BABForm === "3") oNewLine.BAB = Math.floor(oNewLine.Lvl * 1);
+
+			oNewLine.AttackSTR = (oNewLine.BAB //
+					+ formatter.abilitiesMod(oNewLine.Class.Abilities["Strength"]) * 1) //
+				+ ""; // STR/DEX + Base Atk(level, class) + 0,5 или 1 или 0,75 от ур-ня
+
+			oNewLine.AttackDEX = (oNewLine.BAB //
+					+ formatter.abilitiesMod(oNewLine.Class.Abilities["Dexterity"]) * 1) //
+				+ ""; // STR/DEX + Base Atk(level, class) + 0,5 или 1 или 0,75 от ур-ня
+
+			oNewLine.DamageSTR1H = //
+				Math.floor(formatter.abilitiesMod(oNewLine.Class.Abilities["Strength"])) + ""; // STR/DEX + DMG(weapon)
+			oNewLine.DamageDEX1H = //
+				Math.floor(formatter.abilitiesMod(oNewLine.Class.Abilities["Dexterity"])) + ""; // STR/DEX + DMG(weapon)
+			oNewLine.DamageSTR2H = //
+				Math.floor(formatter.abilitiesMod(oNewLine.Class.Abilities["Strength"]) * 1.5) //
+				+ ""; // 1,5*STR/DEX + DMG(weapon)
+			oNewLine.DamageDEX2H = //
+				Math.floor(formatter.abilitiesMod(oNewLine.Class.Abilities["Dexterity"]) * 1.5) //
+				+ ""; // 1,5*STR/DEX + DMG(weapon)
+			oNewLine.DamageSTRoffH = //
+				Math.floor(formatter.abilitiesMod(oNewLine.Class.Abilities["Strength"]) * 0.5) //
+				+ ""; // 0,5*STR/DEX + DMG(weapon)
+			oNewLine.DamageDEXoffH = //
+				Math.floor(formatter.abilitiesMod(oNewLine.Class.Abilities["Dexterity"]) * 0.5) //
+				+ ""; // 0,5*STR/DEX + DMG(weapon)
+
+			oNewLine.CMB = ""; // Base Attack Bonus + Str + SizeBonus
+			oNewLine.CMD = ""; // 10 + Base Attack Bonus + Str + Dex + SizeBonus
+			oNewLine.AC = ""; // 10 + Dex + SizeBonus
+			oNewLine.TouchAC = ""; // 10 + Dex + SizeBonus
+			oNewLine.FlatFootedAC = ""; // SizeBonus
 
 			oMassive.push(oNewLine);
 			this.getOwnerComponent().getModel("characters").refresh();

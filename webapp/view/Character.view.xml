@@ -39,7 +39,7 @@
 				<Input value="{Gender}"/>
 				<Label text="Class"/>
 				<!--<Input value="{Class/Name}"/>-->
-				<ComboBox  id="Class" items="{ path: 'class>/Class/' }" value="{Class/Name}" selectedKey="{Class/Name}" change="handleChangeClass">
+				<ComboBox id="Class" items="{ path: 'class>/Class/' }" value="{Class/Name}" selectedKey="{Class/Name}" change="handleChangeClass">
 					<core:Item key="{class>Name}" text="{class>Name}"/>
 				</ComboBox>
 				<Label text="Lvl"/>
@@ -68,28 +68,56 @@
 				<Label text="Size"/>
 				<Input value="{path:'Combat/Size'} "/>
 				<Label text="Speed"/>
-				<Input value="{path:'Combat/Feet'}" type="Number"
-					description="{path:'Combat/Feet', formatter: '.formatter.CombatFeet'}"/>
-				<!--"Race": "Human",
-				"Age": 30,
-				"SubmissiveLeader": 4,
-				"Motive": {
-					"Love": 10,
-					"Money": 3,
-					"Ideology": 5,
-					"Survival": 5,
-					"InventionExploration": 3
-				},
-				"Wealth": 3,
-				"Profession": "Singer",
-				"Deity": "None",
-				"Gender": "Male"-->
+				<Input value="{path:'Combat/Feet'}" type="Number" description="{path:'Combat/Feet', formatter: '.formatter.CombatFeet'}"/>
+				<Label text="Initiative"/>
+				<Input value="{path:'Initiative'} "/>
+				<Label text="Health"/>
+				<Input value="{path:'Health'} "/>
+				<Label text="Fortitude"/>
+				<Input value="{path:'Fortitude'} "/>
+				<Label text="Reflex"/>
+				<Input value="{path:'Reflex'} "/>
+				<Label text="Will"/>
+				<Input value="{path:'Will'} "/>
+				<Label text="AttackSTR"/>
+				<Input value="{path:'AttackSTR'} "/>
+				<Label text="AttackDEX"/>
+				<Input value="{path:'AttackDEX'} "/>
+				<core:Title/>
+				<Label text="DamageSTR1H"/>
+				<Input value="{path:'DamageSTR1H'} "/>
+				<Label text="DamageDEX1H"/>
+				<Input value="{path:'DamageDEX1H'} "/>
+				<Label text="DamageSTR2H"/>
+				<Input value="{path:'DamageSTR2H'} "/>
+				<Label text="DamageDEX2H"/>
+				<Input value="{path:'DamageDEX2H'} "/>
+				<Label text="DamageSTRoffH"/>
+				<Input value="{path:'DamageSTRoffH'} "/>
+				<Label text="DamageDEXoffH"/>
+				<Input value="{path:'DamageDEXoffH'} "/>
+				<Label text="BAB"/>
+				<Input value="{path:'BAB'} "/>
+				<Label text="CMB"/>
+				<Input value="{path:'CMB'} "/>
+				<Label text="CMD"/>
+				<Input value="{path:'CMD'} "/>
+				<Label text="AC"/>
+				<Input value="{path:'AC'} "/>
+				<Label text="TouchAC"/>
+				<Input value="{path:'TouchAC'} "/>
+				<Label text="FlatFootedAC"/>
+				<Input value="{path:'FlatFootedAC'} "/>
 			</f:content>
 		</f:SimpleForm>
+		<VBox class="sapUiSmallMargin">
+			<Label text="Details:"/>
+			<TextArea value="{Description}" growing="true" rows="4" width="100%"/>
+		</VBox>
 		<footer>
 			<Bar>
 				<contentLeft>
-					<Button id = "backCharacter"  icon="sap-icon://nav-back" press="onNavBack"/>
+					<Button id="backCharacter" icon="sap-icon://nav-back" press="onNavBack"/>
 				</contentLeft>
 			</Bar>
 		</footer>
