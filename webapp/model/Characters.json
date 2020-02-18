@@ -16,6 +16,7 @@
 		"Profession": "Singer",
 		"Deity": "None",
 		"Gender": "Male",
+		"Tags": ["Курит табак", "Блудник/Блудница"],
 		"Lvl": 1,
 		"Combat": {
 			"Feet": 10,

@@ -111,6 +111,12 @@
 			</f:content>
 		</f:SimpleForm>
 		<VBox class="sapUiSmallMargin">
+			<Label text="Tags:"/>
+			<MultiInput showValueHelp="false" tokens="{ path: 'Tags'}">
+				<tokens>
+					<Token key="{}" text="{}"/>
+				</tokens>
+			</MultiInput>
 			<Label text="Details:"/>
 			<TextArea value="{Description}" growing="true" rows="4" width="100%"/>
 		</VBox>
