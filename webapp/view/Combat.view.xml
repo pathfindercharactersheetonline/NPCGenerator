@@ -1,0 +1,23 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	controllerName="NPCGen.NPCGen.controller.Combat">
+	<Page>
+		<f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12"
+			adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="2" columnsM="2"
+			singleContainerFullSize="false" tooltip="{Name} {Description}" title="{Name} {Description}">
+			<f:content>
+				<Label text="Speed"/>
+				<Input value="{path:'Combat/Feet', type:'sap.ui.model.type.Integer'}" type="Number"/>
+				<Label text="Size"/>
+				<Input value="{path:'Combat/Size' }"  />
+			</f:content>
+		</f:SimpleForm>
+		<footer>
+			<Bar>
+				<contentLeft>
+					<Button icon="sap-icon://nav-back" press="onNavBack"/>
+				</contentLeft>
+			</Bar>
+		</footer>
+		<content/>
+	</Page>
+</mvc:View>

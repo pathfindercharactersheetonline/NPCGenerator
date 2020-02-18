@@ -12,9 +12,11 @@
 		"sourceTemplate": {
 			"id": "ui5template.basicSAPUI5ApplicationProject",
 			"version": "1.40.12"
+		},
+		"crossNavigation": {
+			"inbounds": {}
 		}
 	},
-
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -31,7 +33,6 @@
 			"phone": true
 		}
 	},
-
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
@@ -61,15 +62,23 @@
 			},
 			"characters": {
 				"type": "sap.ui.model.json.JSONModel",
-				"uri": "model/Characters.json"
+				"uri": "model/Characters.json",
+				"preload": false
 			},
 			"templates": {
 				"type": "sap.ui.model.json.JSONModel",
-				"uri": "model/Templates.json"
+				"uri": "model/Templates.json",
+				"preload": false
 			},
 			"template": {
 				"type": "sap.ui.model.json.JSONModel",
-				"uri": "model/Template.json"
+				"uri": "model/Template.json",
+				"preload": false
+			},
+						"class": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/Class.json",
+				"preload": false
 			}
 		},
 		"resources": {
@@ -88,7 +97,7 @@
 				"clearControlAggregation": false
 			},
 			"routes": [{
-				"name": "RouteMain",
+				"name": "TargetMain",
 				"pattern": "RouteMain",
 				"target": ["TargetMain"]
 			}, {
@@ -106,13 +115,23 @@
 			}, {
 				"name": "Template",
 				"pattern": "Templates/Template/{Id}",
-				"target": [
-					"Template"
-				]
+				"target": ["Template"]
 			}, {
 				"name": "Home",
 				"pattern": "",
 				"target": ["Home"]
+			}, {
+				"name": "Class",
+				"pattern": "Template/{TemplId}/Class/{Id}",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["Class"]
+			}, {
+				"name": "Combat",
+				"pattern": "Template/{TemplId}/Race/{Id}",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["Combat"]
 			}],
 			"targets": {
 				"TargetMain": {
@@ -151,6 +170,22 @@
 					"viewId": "Home",
 					"viewName": "Home",
 					"viewLevel": 5
+				},
+				"Class": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "Class",
+					"viewLevel": 10,
+					"viewId": "Class"
+				},
+				"Combat": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "Combat",
+					"viewLevel": 10,
+					"viewId": "Combat"
 				}
 			}
 		}

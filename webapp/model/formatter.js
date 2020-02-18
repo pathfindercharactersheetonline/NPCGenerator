@@ -23,6 +23,36 @@ sap.ui.define([
 			} catch (err) {
 				return undefined;
 			}
-		}
+		},
+		CombatFeet: function (oValue) {
+			switch (oValue) {
+			case null:
+				return null;
+			case undefined:
+				return undefined;
+			default:
+				return oValue + " " + "ft.";
+			}
+		},
+		abilitiesMod: function (oValue) {
+				/*if (oValue != nill) {
+					var oPath = this.oView.mObjectBindingInfos.undefined.binding.getPath();
+					var aPath = oPath.split("/");
+					var oModel = this.oView.mObjectBindingInfos.undefined.binding.getModel().oData[aPath[1]][aPath[2]];
+					var oLvl = oModel.Lvl;
+					return;
+				}
+				return 0;
+				*/
+				switch (oValue) {
+				case null:
+					return null;
+				case undefined:
+					return undefined;
+				default:
+					return Math.floor((oValue - 10) / 2);
+				}
+			}
+			// + привычки
 	};
 });
