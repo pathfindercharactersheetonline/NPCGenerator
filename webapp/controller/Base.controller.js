@@ -180,6 +180,25 @@ sap.ui.define([
 			}
 			return undefined;
 		},
+
+		getDeleteRandomObject: function (mObjects) { // копипаста по говну
+			var iMaxNum = 0;
+			for (var i = 0; i < mObjects.length; i++) {
+				mObjects[i].startNum = iMaxNum;
+				iMaxNum += mObjects[i].Probability * 1;
+				mObjects[i].endNum = iMaxNum;
+			}
+			var iRandomNumber = this.getRandomNumber.call(this, 0, iMaxNum);
+			for (i = 0; i < mObjects.length; i++) {
+				if (mObjects[i].startNum <= iRandomNumber && mObjects[i].endNum >= iRandomNumber) {
+					var oResult = mObjects[i];
+					mObjects.splice(i, 1);
+					return oResult;
+				}
+			}
+			return undefined;
+		},
+
 		getRandomNumber: function getRndInteger(min, max) {
 			try {
 				return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -198,6 +217,18 @@ sap.ui.define([
 			}
 			var oTemplate = this.getOwnerComponent().getModel("templates").getProperty(oSourcePath);
 
+			// делаем по говну
+			// oTemplate.TagsNumFrom до oTemplate.TagsNumTo
+
+			var mTags = JSON.parse(JSON.stringify(oTemplate.Tags));
+			var oTagsNum = this.getRandomNumber.call(this, oTemplate.TagsNumFrom * 1, oTemplate.TagsNumTo * 1) * 1;
+
+			if (oTagsNum > mTags.length) oTagsNum = mTags.length;
+			oNewLine.Tags = [];
+			for (var i = 0; i < oTagsNum; i++) {
+				oNewLine.Tags.push(this.getDeleteRandomObject.call(this, mTags).Name);
+			}
+
 			oNewLine.Gender = this.getRandomObject.call(this, oTemplate.Gender).Name;
 			switch (oNewLine.Gender) {
 			case "Male":
@@ -212,7 +243,7 @@ sap.ui.define([
 			oNewLine.Surname = this.getRandomObject.call(this, oTemplate.Surname).Name;
 			oNewLine.Race = this.getRandomObject.call(this, oTemplate.Race).Name;
 
-			for (var i = 0; i < oTemplate.Race.length; i++) {
+			for (i = 0; i < oTemplate.Race.length; i++) {
 				if (oTemplate.Race[i].Name === oNewLine.Race) {
 					oNewLine.Combat.Size = oTemplate.Race[i].Combat.Size;
 					oNewLine.Combat.Feet = oTemplate.Race[i].Combat.Feet;

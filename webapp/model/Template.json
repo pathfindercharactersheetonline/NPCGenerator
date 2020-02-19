@@ -45,6 +45,8 @@
 			"From": 1,
 			"To": 20
 		},
+		"TagsNumFrom": 2,
+		"TagsNumTo": 3,
 		"FemaleName": [{
 			"Name": "Аделаида",
 			"Probability": "1"
@@ -1420,6 +1422,34 @@
 			"Name": "Female",
 			"Probability": "1"
 		}],
+		"Tags": [{
+			"Name": "Курит табак",
+			"Probability": "1"
+		}, {
+			"Name": "Наркоман",
+			"Probability": "1"
+		}, {
+			"Name": "Обжора",
+			"Probability": "1"
+		}, {
+			"Name": "Книжник",
+			"Probability": "1"
+		}, {
+			"Name": "Увлекается поэзией",
+			"Probability": "1"
+		}, {
+			"Name": "Любит цветы",
+			"Probability": "1"
+		}, {
+			"Name": "Любитель дорогой одежды",
+			"Probability": "1"
+		}, {
+			"Name": "Блудник/Блудница",
+			"Probability": "1"
+		}, {
+			"Name": "Алкоголик",
+			"Probability": "1"
+		}],
 		"Deity": [{
 			"Name": "Erastil",
 			"Description": "God of farming, hunting, trade, family",
@@ -1909,6 +1939,7 @@
 		"Profession": "",
 		"Deity": "",
 		"Gender": "",
+		"Tags": [],
 		"Lvl": 1,
 		"Combat": {
 			"Feet": 0,

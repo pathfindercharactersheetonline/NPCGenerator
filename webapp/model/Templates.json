@@ -5,7 +5,8 @@
 			"From": 1,
 			"To": 20
 		},
-		"TagsNum": 3,
+		"TagsNumFrom": 2,
+		"TagsNumTo": 3,
 		"FemaleName": [{
 			"Name": "Аделаида",
 			"Probability": "1"

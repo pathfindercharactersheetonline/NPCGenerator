@@ -370,7 +370,8 @@
 										<headerToolbar>
 											<Toolbar>
 												<Text text="Number of tags"/>
-												<Input value="{TagsNum}" width="3em"/>
+												<Input value="{TagsNumFrom}" width="3em"/>
+												<Input value="{TagsNumTo}" width="3em"/>
 												<Button icon="sap-icon://add"
 													press=".onNew.call($controller,$event, $controller.getView().getBindingContext().getPath() + '/Tags', '/NameProbability')"/>
 												<Button icon="sap-icon://delete" text="Delete all"
