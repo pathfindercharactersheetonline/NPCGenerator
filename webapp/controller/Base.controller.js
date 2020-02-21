@@ -262,7 +262,7 @@ sap.ui.define([
 			oNewLine.Motive.Survival = this.getRandomNumber.call(this, 1, 10);
 			oNewLine.Motive.InventionExploration = this.getRandomNumber.call(this, 1, 10);
 			oNewLine.Wealth = this.getRandomNumber.call(this, 1, 10);
-			oNewLine.Lvl = this.getRandomNumber.call(this, oTemplate.Lvl.From, oTemplate.Lvl.To);
+			oNewLine.Lvl = this.getRandomNumber.call(this, oTemplate.Lvl.From * 1, oTemplate.Lvl.To * 1) * 1;
 
 			var oClass = Object.assign({}, this.getRandomObject.call(this, oTemplate.Class));
 			oNewLine.Class.Name = oClass.Name;
